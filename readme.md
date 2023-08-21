@@ -8,7 +8,7 @@ An in-depth paragraph about your project and overview of use.
 
 ## Composantes Tailwind
 
-- [Merriweather](https://fonts.google.com/specimen/Merriweather?preview.text=catamaran&preview.text_type=custom&query=Merriweather)
+- [Formulaire - Floating Label Contact Form](https://tailwindcomponents.com/component/floating-label-contact-form)
 - [Raleway](https://fonts.google.com/specimen/Raleway?preview.text=catamaran&preview.text_type=custom&query=Raleway)
 
 ## Style

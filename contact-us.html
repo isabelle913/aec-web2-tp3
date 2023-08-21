@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visiter le Québec</title>
+  <link rel="stylesheet" href="./style/css/normalize.css" />
+  <link rel="stylesheet" href="./style/css/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./script/script.js" defer></script>
+<!-- TODO faire head -->
+</head>
+
+<body>
+ 
+
+    <header></header>
+    <main>
+      <section class="container grid grid-cols-12 p-5 bg-green-100 mx-auto ">
+
+        <h2 class="col-span-12">Pour faire connaitre l'un de vos endroits préférez, par ici</h2>
+        <!-- prénom nom téléphone courriel -->
+        <!-- ajouter un lieu nom adresse téléphone site web description -->
+        <div class="col-span-12 ">
+
+         
+          <!-- <form id="form" class=" mt-10" action="confirmation.html" onsubmit="return validateForm()" novalidate> -->
+          <!-- <form id="form" name="form" class=" mt-10" action="confirmation.html" onsubmit="return validateForm()" method="post" novalidate> -->
+          <form id="form" name="form" class=" mt-10" action="confirmation.html" onsubmit="return validateForm()" novalidate>
+              <!-- Inspiré de https://tailwindcomponents.com/component/floating-label-contact-form -->
+              <!-- TODO ??? grid est en base 2 du component dois-je la convertir en base 12? -->
+              <h3 class="my-5">Vos informations:</h3>
+              <div class="grid gap-6 md:grid-cols-2">
+                <div class="relative z-0">
+                  <input type="text" name="firstName" id="firstName" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
+                  <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Prénom</label>
+                   <div class="error-message text-red-600"></div>
+                </div>
+                <div class="relative z-0">
+                  <input type="text" name="lastName" id="lastName" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
+                  <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Nom de famille</label>
+                   <div class="error-message  text-red-600"></div>
+                </div>
+                <div class="relative z-0">
+                  <input type="tel" name="phone" id="phone" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
+                  <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Téléphone</label>
+                   <div class="error-message  text-red-600"></div>
+                </div>
+                <div class="relative z-0">
+                  <input type="email" name="email" id="email" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
+                  <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Courriel</label>
+                   <div class="error-message  text-red-600"></div>
+                </div>
+            
+              </div>
+
+              <h3 class="my-5">Informations de l'endroit recommandé:</h3>
+              <div class="grid gap-6 md:grid-cols-2">
+           <!-- TODO Corriger la grid -->
+                <div class="relative z-0 col-span-2">
+                  <input type="text" name="spotName" id="spotName" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
+                  <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Nom de votre spot</label>
+                  <div class="error-message  text-red-600"></div>
+                </div>
+                <div class="relative z-0">
+                  <input type="tel" name="spotPhone" id="spotPhone" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
+                  <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Téléphone</label>
+                  <div class="error-message  text-red-600"></div>
+                </div>
+                <div class="relative z-0">
+                  <input type="url" name="spotUrl" id="spotUrl" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
+                  <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Site web</label>
+                  <div class="error-message  text-red-600"></div>
+                </div>
+                <div class="relative z-0 col-span-2">
+                  <input type="text" name="spotAddress" id="spotAddress" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
+                  <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Adresse</label>
+                  <div class="error-message  text-red-600"></div>
+                </div>
+                <div class="relative z-0 col-span-2">
+                  <textarea name="spotDescription" id="spotDescription" rows="5" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" "></textarea>
+                  <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Description</label>
+                  <div class="error-message  text-red-600"></div>
+                </div>
+              </div>
+
+              <!-- <button type="submit" class="mt-5 rounded-md bg-black px-10 py-2 text-white">Soumettre</button> -->
+              <input type="submit" class="mt-5 rounded-md bg-black px-10 py-2 text-white" value="Soumettre" />
+            </form>
+        </div>
+    
+
+      </section>
+     
+    </main>
+    <footer></footer>
+
+ 
+</body>
+
+</html>
