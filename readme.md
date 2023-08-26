@@ -4,42 +4,39 @@ TP3, cours Technique d'intégration des interfaces Web 2, Cegep de Trois-Rivièr
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+TODO changer ce paragraphe, expliquer ce que je voulais faire avec ce site et ce qu'il pourra devenir dans le futur
+
+- partager mes spots avec amis et famille
+  An in-depth paragraph about your project and overview of use.
 
 ## Composantes Tailwind
 
 - [Formulaire - Floating Label Contact Form](https://tailwindcomponents.com/component/floating-label-contact-form)
-- [Raleway](https://fonts.google.com/specimen/Raleway?preview.text=catamaran&preview.text_type=custom&query=Raleway)
+- [Header - Tailwind CSS Header](https://tailwindcomponents.com/component/tailwind-css-header)
+- [Footer - Social media icons](https://flowbite.com/docs/components/footer/) Très modifié pour s'adapter au header!
+- [Header - Tailwind CSS Header](https://tailwindcomponents.com/component/tailwind-css-header)
 
 ## Style
 
 ### Palette de couleur
 
-- Modifier
+- Bleu Québec: rgb(20, 114, 191)
 - Modifier
 
 ### Police de caractères
 
-Sur le site de Mario Bros Nitendo, c'est la police [catamaran](https://fonts.google.com/specimen/Catamaran?preview.text=catamaran&preview.text_type=custom&query=cata) qui est utilisé, je l'aime bien
-
-On pourrait jumeler avec
-
-- [Merriweather](https://fonts.google.com/specimen/Merriweather?preview.text=catamaran&preview.text_type=custom&query=Merriweather)
-- [Raleway](https://fonts.google.com/specimen/Raleway?preview.text=catamaran&preview.text_type=custom&query=Raleway)
+- De façon général: [nunito](https://fonts.google.com/specimen/Nunito?preview.text=Visiter%20le%20Qu%C3%A9bec&preview.text_type=custom&query=nunito)
+- Deuxième police: [Laura](https://fonts.google.com/specimen/Lora?preview.text=Visiter%20le%20Qu%C3%A9bec&preview.text_type=custom&query=lora)
+- Pour le logo: [Comforter](https://fonts.google.com/specimen/Comforter?preview.text=Visiter%20le%20Qu%C3%A9bec&preview.text_type=custom&category=Handwriting&query=comforter)
 
 ## Authors
 
-Anne Massicotte
 Isabelle Langlois
 
-Lien du [GItHub](https://github.com/isabelle913/aec-web2-tp2)
+Lien du [GItHub](https://github.com/isabelle913/aec-web2-tp3)
 
 ## On pourra mettre qq chose, nos inspirations!
 
 Inspiration, code snippets, etc.
 
-- [Site Mario Bros Nitendo](https://mario.nintendo.com/)
-- [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-- [dbader](https://github.com/dbader/readme-template)
-- [zenorocha](https://gist.github.com/zenorocha/4526327)
-- [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+- [Palette couleur du Québec](https://design.quebec.ca/bases/couleurs#c118192)

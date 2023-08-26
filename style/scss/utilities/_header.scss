@@ -1,0 +1,17 @@
+@use "variables";
+
+header {
+  .header__link {
+    &:hover {
+      color: variables.$color-blue;
+    }
+    &--active {
+      color: variables.$color-blue;
+    }
+  }
+
+  .header__logo {
+    font-family: variables.$font-logo;
+    color: variables.$color-blue;
+  }
+}
