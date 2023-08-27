@@ -1,4 +1,4 @@
-const form = document.querySelector("#form");
+// const form = document.querySelector("#form");
 const firstName = document.querySelector("#firstName");
 const lastName = document.querySelector("#lastName");
 const phone = document.querySelector("#phone");
@@ -10,7 +10,6 @@ const spotAddress = document.querySelector("#spotAddress");
 const spotDescription = document.querySelector("#spotDescription");
 
 const validateForm = () => {
- 
   let noError = [];
 
   // Valider firstName
@@ -22,7 +21,7 @@ const validateForm = () => {
     noError.push(true);
   }
 
-    // Valider lastName
+  // Valider lastName
   if (lastName.value.trim() === "") {
     setError(lastName, "Veuillez inscrire votre nom de famille");
     noError.push(false);
@@ -30,7 +29,7 @@ const validateForm = () => {
     setSuccess(lastName);
     noError.push(true);
   }
-     // Valider phone
+  // Valider phone
   if (phone.value.trim() === "") {
     setError(phone, "Veuillez inscrire votre numéro de téléphone");
     noError.push(false);
@@ -42,16 +41,16 @@ const validateForm = () => {
   // valider courriel
   if (email.value.trim() === "") {
     setError(email, "Veuillez inscrire un courriel");
-     noError.push(false);
+    noError.push(false);
   } else if (!validateEmail(email.value.trim())) {
     setError(email, "Veuillez inscrire un courriel valide");
-     noError.push(false);
+    noError.push(false);
   } else {
     setSuccess(email);
     noError.push(true);
   }
 
-   // Valider spotName
+  // Valider spotName
   if (spotName.value.trim() === "") {
     setError(spotName, "Veuillez inscrire le nom de l'endroit recommandé.");
     noError.push(false);
@@ -59,7 +58,7 @@ const validateForm = () => {
     setSuccess(spotName);
     noError.push(true);
   }
-    // Valider spotPhone
+  // Valider spotPhone
   if (spotPhone.value.trim() === "") {
     setError(spotPhone, "Veuillez inscrire le numéro de téléphone.");
     noError.push(false);
@@ -67,20 +66,20 @@ const validateForm = () => {
     setSuccess(spotPhone);
     noError.push(true);
   }
-    // Valider spotUrl
+  // Valider spotUrl
   if (spotUrl.value.trim() === "") {
     setError(spotUrl, "Veuillez inscrire le site web de cet endroit.");
     noError.push(false);
-   } 
+  }
   //else if (!validateUrl(spotUrl.value.trim())) {
   //   setError(spotUrl, "Veuillez inscrire un url valide.");
   //    noError.push(false);
   // }
-   else {
+  else {
     setSuccess(spotUrl);
     noError.push(true);
   }
-    // Valider spotAddress
+  // Valider spotAddress
   if (spotAddress.value.trim() === "") {
     setError(spotAddress, "Veuillez inscrire l'adresse.");
     noError.push(false);
@@ -88,7 +87,7 @@ const validateForm = () => {
     setSuccess(spotAddress);
     noError.push(true);
   }
-    // Valider spotDescription
+  // Valider spotDescription
   if (spotDescription.value.trim() === "") {
     setError(spotDescription, "Veuillez donner une description.");
     noError.push(false);
@@ -99,7 +98,7 @@ const validateForm = () => {
 
   //console.log('noError', noError);
   if (noError.length === 9 && !noError.includes(false)) {
-    console.log('9');
+    console.log("9");
     return true;
   } else {
     return false;
@@ -129,7 +128,7 @@ const validateEmail = (email) => {
 
   return re.test(String(email).toLowerCase());
 };
-const validateUrl = (value) => {
-  return /^(?:(?:(?:https?|ftp):)?\/\/)(?:\S+(?::\S*)?@)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)(?:\.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*(?:\.(?:[a-z\u00a1-\uffff]{2,})))(?::\d{2,5})?(?:[/?#]\S*)?$/i.test(value);
-}
 
+// const validateUrl = (value) => {
+//   return /^(?:(?:(?:https?|ftp):)?\/\/)(?:\S+(?::\S*)?@)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)(?:\.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*(?:\.(?:[a-z\u00a1-\uffff]{2,})))(?::\d{2,5})?(?:[/?#]\S*)?$/i.test(value);
+// }
