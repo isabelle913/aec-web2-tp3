@@ -1,0 +1,28 @@
+{
+  "name": "Visiter le Québec",
+  "short_name": "VisitQc",
+  "icons": [
+    {
+      "src": "isabelle913/aec-web2-tp3/img/icons-manifest/logo512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "isabelle913/aec-web2-tp3/img/icons-manifest/logo192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "isabelle913/aec-web2-tp3/img/icons-manifest/logo144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "https://isabelle913.github.io/aec-web2-tp1/",
+  "theme_color": "#1472bf",
+  "background_color": "#FFFFFF",
+  "display": "standalone"
+}
