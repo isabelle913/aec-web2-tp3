@@ -3,21 +3,21 @@
   "short_name": "VisitQc",
   "icons": [
     {
-      "src": "isabelle913/aec-web2-tp3/img/icons-manifest/logo512.jpg",
+      "src": "isabelle913/aec-web2-tp3/img/icons-manifest/logo512.png",
       "sizes": "512x512",
-      "type": "image/jpg",
+      "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "isabelle913/aec-web2-tp3/img/icons-manifest/logo192.jpg",
+      "src": "isabelle913/aec-web2-tp3/img/icons-manifest/logo192.png",
       "sizes": "192x192",
-      "type": "image/jpg",
+      "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "isabelle913/aec-web2-tp3/img/icons-manifest/logo144.jpg",
+      "src": "isabelle913/aec-web2-tp3/img/icons-manifest/logo144.png",
       "sizes": "144x144",
-      "type": "image/jpg",
+      "type": "image/png",
       "purpose": "any maskable"
     }
   ],
