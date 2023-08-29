@@ -1,6 +1,8 @@
 import { Carousel } from "flowbite";
 
-const itemsSrek = [
+console.log("Miip");
+
+const items = [
   {
     position: 0,
     el: document.getElementById("carousel-item-1"),
@@ -56,6 +58,6 @@ const options = {
   },
 };
 
-const carousel = new Carousel(itemsSrek, options);
+const carousel = new Carousel(items, options);
 
 carousel.cycle();

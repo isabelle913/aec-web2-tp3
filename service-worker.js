@@ -1,4 +1,4 @@
-console.log("fichier service-worker");
+// console.log("fichier service-worker");
 
 //Update cache names any time any of the cached files change.
 const CACHE_NAME = "static-cache-v1";
@@ -6,7 +6,7 @@ const CACHE_NAME = "static-cache-v1";
 const FILES_TO_CACHE = ["offline.html"];
 
 self.addEventListener("install", (evt) => {
-  console.log("[ServiceWorker] Install");
+  // console.log("[ServiceWorker] Install");
   // Precache static resources here.
   evt.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
@@ -18,7 +18,7 @@ self.addEventListener("install", (evt) => {
 });
 
 self.addEventListener("activate", (evt) => {
-  console.log("[ServiceWorker] Activate");
+  // console.log("[ServiceWorker] Activate");
   //Remove previous cached data from disk.
 
   evt.waitUntil(
@@ -37,7 +37,7 @@ self.addEventListener("activate", (evt) => {
 });
 
 self.addEventListener("fetch", (evt) => {
-  console.log("[ServiceWorker] Fetch", evt.request.url);
+  // console.log("[ServiceWorker] Fetch", evt.request.url);
   //Add fetch event handler here.
   if (evt.request.mode !== "navigate") {
     // Not a page navigation, bail.
