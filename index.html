@@ -37,13 +37,9 @@
 </head>
 
 <body>
-  <!-- TODO ajouter ma signature à mes photos -->
-
-
   <header class="container grid grid-cols-12 mx-auto">
     <div class="col-span-12 w-full text-gray-700 bg-white border-t border-gray-100 shadow-sm body-font">
       <div class="flex flex-col flex-wrap items-center p-5 mx-auto md:flex-row">
-        <!-- TODO changer nom des tabs -->
         <nav class="flex flex-wrap items-center text-base lg:w-2/5 md:ml-auto">
           <a href="index.html" class="mr-5 text-xl header__link--active underline underline-offset-8">Accueil</a>
           <a href="ou-aller.html" class="mr-5 text-xl header__link hover:underline hover:underline-offset-8">Où
@@ -57,7 +53,6 @@
   <main>
 
     <!-- Section photo -->
-    <!-- TODO corriger les 5 points en partie caché selon largeur -->
     <section class="container grid grid-cols-12 mx-auto">
       <h2 class="hidden">Le Québec en photo</h2>
       <div class="col-span-12 p-12">
@@ -188,17 +183,19 @@
     </section>
 
     <!-- Section card saison -->
-    <!-- TODO mettre +/- photo en background -->
     <section class="container grid grid-cols-12 mx-auto p-6">
 
-      <div class="col-span-12 lg:col-span-6 mx-auto max-w-md xl:max-w-lg py-4 px-8 bg-white shadow-lg rounded-lg my-20">
+      <div
+        class="col-span-12 lg:col-span-6 mx-auto max-w-md xl:max-w-lg py-4 px-8 bg-white shadow-lg rounded-lg my-20 bg-cover"
+        style="background-image: url(./img/bg-card/neige.jpg);">
         <div class="flex justify-center md:justify-end -mt-16">
           <img class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
             src="./img/pastilles/Saison-hiver.png">
         </div>
         <div>
-          <h2 class="text-gray-800 text-3xl font-semibold">Hiver</h2>
-          <p class="mt-2 text-gray-600">L'hiver au Québec déploie son manteau blanc avec une majesté envoûtante. Les
+          <h2 class="text-gray-800 text-3xl font-semibold text-white">Hiver</h2>
+          <p class="mt-2 text-gray-600 text-white">L'hiver au Québec déploie son manteau blanc avec une majesté
+            envoûtante. Les
             flocons virevoltent, peignant un paysage
             féérique à perte de vue. Les rivières gelées deviennent des chemins de glace où patinent joyeusement
             petits et grands.
@@ -224,22 +221,7 @@
         </div>
       </div>
 
-      <div class="col-span-12 lg:col-span-6 mx-auto max-w-md xl:max-w-lg py-4 px-8 bg-white shadow-lg rounded-lg my-20">
-        <div class="flex justify-center md:justify-end -mt-16">
-          <img class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
-            src="./img/pastilles/Saison-ete.png">
-        </div>
-        <div>
-          <h2 class="text-gray-800 text-3xl font-semibold">Été</h2>
-          <p class="mt-2 text-gray-600">L'été au Québec s'ouvre telle une aquarelle vivante, où les journées s'étirent
-            en une symphonie ensoleillée. Les lacs
-            invitent à la baignade rafraîchissante, tandis que les forêts verdoyantes offrent des sentiers pour
-            l'exploration. Les
-            festivals animent les villes, emplissant l'air de rires et de mélodies festives, tandis que les couchers
-            de soleil
-            embrasent le ciel d'une palette chaleureuse.</p>
-        </div>
-      </div>
+
 
       <div class="col-span-12 lg:col-span-6 mx-auto max-w-md xl:max-w-lg py-4 px-8 bg-white shadow-lg rounded-lg my-20">
         <div class="flex justify-center md:justify-end -mt-16">
@@ -247,7 +229,7 @@
             src="./img/pastilles/Saison-automne.png">
         </div>
         <div>
-          <h2 class="text-gray-800 text-3xl font-semibold">Été</h2>
+          <h2 class="text-gray-800 text-3xl font-semibold">Automne</h2>
           <p class="mt-2 text-gray-600">L'automne peint un tableau saisissant de feuilles flamboyantes et d'air vif.
             Les érables se parent de teintes
             dorées et rouges, créant un paysage d'une beauté éclatante. Les vergers offrent leurs fruits gorgés de
@@ -255,6 +237,26 @@
             que l'atmosphère fraîche invite à de paisibles promenades en forêt. L'automne québécois captive les sens
             dans un
             émerveillement visuel et gustatif.</p>
+        </div>
+      </div>
+
+      <div
+        class="col-span-12 lg:col-span-6 mx-auto max-w-md xl:max-w-lg py-4 px-8 bg-white shadow-lg rounded-lg my-20 bg-cover"
+        style="background-image: url(./img/bg-card/idm-chateau.jpg);">
+        <div class="flex justify-center md:justify-end -mt-16">
+          <img class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
+            src="./img/pastilles/Saison-ete.png">
+        </div>
+        <div>
+          <h2 class="text-gray-800 text-3xl font-semibold text-white">Été</h2>
+          <p class="mt-2 text-gray-600 text-white">L'été au Québec s'ouvre telle une aquarelle vivante, où les journées
+            s'étirent
+            en une symphonie ensoleillée. Les lacs
+            invitent à la baignade rafraîchissante, tandis que les forêts verdoyantes offrent des sentiers pour
+            l'exploration. Les
+            festivals animent les villes, emplissant l'air de rires et de mélodies festives, tandis que les couchers
+            de soleil
+            embrasent le ciel d'une palette chaleureuse.</p>
         </div>
       </div>
 
