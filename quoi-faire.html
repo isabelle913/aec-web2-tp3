@@ -20,6 +20,7 @@
   <link rel="apple-touch-icon" href="./img/icons-manifest/logo192.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="./script/script.js" defer></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -39,172 +40,496 @@
 
       </div>
   </header>
-  <main class="col-span-12">
-    <section class="  grid grid-cols-12p-5 bg-green-100 mx-auto ">
+  <main class="container grid grid-cols-12 mx-auto py-6 gap-6">
 
-      <h2 class="col-span-12">Pour faire connaitre l'un de vos endroits préférez, par ici</h2>
-      <!-- prénom nom téléphone courriel -->
-      <!-- ajouter un lieu nom adresse téléphone site web description -->
-      <div class="col-span-12 ">
+    <!-- section sous-menu aside -->
+    <aside class="hidden md:block col-span-4 lg:col-span-3 2xl:col-span-2 rounded-lg my-color-light-bg p-6">
+      <p class="border-gray-100 shadow-sm text-xl mb-6">Planifier vos activités</p>
+      <!--    class="text-white my-color-bg hover:bg-blue-800 font-medium rounded-full text-sm px-4 py-4 mr-2 mb-2" -->
+      <ul class="grid grid-cols-12">
+        <li class="col-span-12">
+          <a href="#">
+            <button class="p-4 rounded-lg hover:bg-white w-full text-start">Activité en été</button>
+          </a>
+        </li>
+        <li class="col-span-12">
+          <a href="#">
+            <button class="p-4 rounded-lg hover:bg-white w-full text-start">Quoi faire l'automne</button>
+          </a>
+        </li>
+        <li class="col-span-12">
+          <a href="#">
+            <button class="p-4 rounded-lg hover:bg-white w-full text-start">Jouer dehors l'hiver</button>
+          </a>
+        </li>
+        <li class="col-span-12">
+          <a href="#">
+            <button class="p-4 rounded-lg hover:bg-white w-full text-start">Bienvenue printemps</button>
+          </a>
+        </li>
+      </ul>
+      <p class="border-gray-100 shadow-sm text-xl my-6">Où aller</p>
+      <ul class="grid grid-cols-12">
+        <li class="col-span-12">
+          <a href="ou-aller.html#rive-sud">
+            <button class="p-4 rounded-lg hover:bg-white w-full text-start">Rive-sud du fleuve</button>
+          </a>
+        </li>
+        <li class="col-span-12">
+          <a href="#">
+            <button class="p-4 rounded-lg hover:bg-white w-full text-start">Rive-nord du fleuve</button>
+          </a>
+        </li>
+        <li class="col-span-12">
+          <a href="#">
+            <button class="p-4 rounded-lg hover:bg-white w-full text-start">Gaspésie</button>
+          </a>
+        </li>
+        <li class="col-span-12">
+          <a href="#">
+            <button class="p-4 rounded-lg hover:bg-white w-full text-start">Côte-Nord</button>
+          </a>
+        </li>
+        <li class="col-span-12">
+          <a href="#">
+            <button class="p-4 rounded-lg hover:bg-white w-full text-start">Eeyou Istchee Baie-James</button>
+          </a>
+        </li>
+        <li class="col-span-12">
+          <a href="#">
+            <button class="p-4 rounded-lg hover:bg-white w-full text-start">Iles-de-la-Madeleine</button>
+          </a>
+        </li>
+      </ul>
+      <div class="border-gray-100 shadow-sm text-xl my-6">
+        <a href="ou-aller.html#vos-spots">
+          <button class="p-4 rounded-lg hover:bg-white w-full text-start">Pour faire connaitre vos endroits
+            préférez</button>
+        </a>
+      </div>
+    </aside>
+
+    <!-- section sous-menu dropdown -->
+    <section class="col-span-12 md:hidden flex justify-center">
+
+      <button id="dropdownDividerButton" data-dropdown-toggle="dropdownDivider"
+        class="my-color-light-bg hover:bg-blue-600 hover:text-white focus:outline-none  font-medium rounded-lg text-xl px-5 py-2.5 text-center inline-flex items-center w-2/3 justify-between "
+        type="button">Planifier vos activités <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="m1 1 4 4 4-4" />
+        </svg></button>
+
+      <!-- Dropdown menu -->
+      <div id="dropdownDivider"
+        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 w-full">
+        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDividerButton">
+          <li>
+            <a href="#"
+              class="block px-4 py-2 hover:bg-blue-200 dark:hover:bg-gray-600 dark:hover:text-white text-xl">Activité
+              en été</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block px-4 py-2 hover:bg-blue-200 dark:hover:bg-gray-600 dark:hover:text-white text-xl">Quoi
+              faire l'automne</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block px-4 py-2 hover:bg-blue-200 dark:hover:bg-gray-600 dark:hover:text-white text-xl">Jouer
+              dehors l'hiver</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block px-4 py-2 hover:bg-blue-200 dark:hover:bg-gray-600 dark:hover:text-white text-xl">Bienvenue
+              printemps</a>
+          </li>
+        </ul>
+        <div class="py-2">
+          <p class="block px-4 py-2  text-gray-700  text-xl font-bold">Où
+            aller</p>
+          <ul class="py-2 text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDividerButton">
+            <li>
+              <a href="ou-aller.html#rive-sud"
+                class="block px-4 py-2 hover:bg-blue-200 dark:hover:bg-gray-600 dark:hover:text-white text-xl">Rive-sud
+                du fleuve</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block px-4 py-2 hover:bg-blue-200 dark:hover:bg-gray-600 dark:hover:text-white text-xl">Rive-nord
+                du fleuve</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block px-4 py-2 hover:bg-blue-200 dark:hover:bg-gray-600 dark:hover:text-white text-xl">Gaspésie</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block px-4 py-2 hover:bg-blue-200 dark:hover:bg-gray-600 dark:hover:text-white text-xl">Côte-Nord</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block px-4 py-2 hover:bg-blue-200 dark:hover:bg-gray-600 dark:hover:text-white text-xl">Eeyou
+                Istchee Baie-James</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block px-4 py-2 hover:bg-blue-200 dark:hover:bg-gray-600 dark:hover:text-white text-xl">Iles-de-la-Madeleine</a>
+            </li>
+          </ul>
+        </div>
+        <div class="py-2">
+          <a href="ou-aller.html#vos-spots"
+            class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-200 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white text-xl">Pour
+            faire connaitre vos endroits
+            préférez</a>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="col-span-12 md:col-span-8 lg:col-span-9 2xl:col-span-10">
+
+      <!-- Section gallerie photo -->
+      <section class="shadow-lg rounded-lg p-6">Gallerie photo</section>
+
+      <!-- Section circuits -->
+      <section class="shadow-lg rounded-lg p-6">
+        <h2 class="text-gray-800 text-3xl font-semibold">Sur les routes du Québec</h2>
+        <p class="mt-2 text-gray-600">Au Québec, tous les chemins mènent à la découverte. On prend la route pour
+          explorer les paysages, écouter les histoires
+          que les villages ont à raconter, dénicher les secrets bien gardés des phares et goûter à ce que le terroir
+          peut nous
+          offrir. Ici, les routes s’écoutent, se vivent et se goûtent.</p>
+        <div class="flex flex-wrap justify-center py-6 gap-6">
+
+          <a href="https://www.bonjourquebec.com/fr-ca/ou-aller/itineraires-et-routes/la-route-des-sommets"
+            class="py-4 rounded-lg my-color-light-bg hover:bg-blue-600 hover:text-white px-4 md:w-[350px] text-center md:text-xl grow"
+            target="_blank">La
+            route des sommets</a>
+          <a href="https://www.bonjourquebec.com/fr-ca/ou-aller/itineraires-et-routes/la-route-du-richelieu"
+            class="py-4 rounded-lg my-color-light-bg hover:bg-blue-600 hover:text-white px-4 md:w-[350px] text-center md:text-xl grow"
+            target="_blank">La
+            route du Richelieu</a>
+          <a href="https://www.bonjourquebec.com/fr-ca/ou-aller/itineraires-et-routes/les-chemins-d-eau"
+            class="py-4 rounded-lg my-color-light-bg hover:bg-blue-600 hover:text-white px-4 md:w-[350px] text-center md:text-xl grow"
+            target="_blank">Les chemins d'eau</a>
+          <a href="https://www.bonjourquebec.com/fr-ca/ou-aller/itineraires-et-routes/la-route-des-baleines"
+            class="py-4 rounded-lg my-color-light-bg hover:bg-blue-600 hover:text-white px-4 md:w-[350px] text-center md:text-xl grow"
+            target="_blank">La
+            route des baleines</a>
+          <a href="https://www.bonjourquebec.com/fr-ca/ou-aller/itineraires-et-routes/la-route-des-monts-notre-dame"
+            class="py-4 rounded-lg my-color-light-bg hover:bg-blue-600 hover:text-white px-4 md:w-[350px] text-center md:text-xl grow"
+            target="_blank">La
+            route des Monts Notre-Dame</a>
+          <a href="https://www.bonjourquebec.com/fr-ca/ou-aller/itineraires-et-routes/le-chemin-du-roy"
+            class="py-4 rounded-lg my-color-light-bg hover:bg-blue-600 hover:text-white px-4 md:w-[350px] text-center md:text-xl grow"
+            target="_blank">Le
+            chemin du Roy</a>
+          <a href="https://www.bonjourquebec.com/fr-ca/ou-aller/itineraires-et-routes/la-route-de-la-beauce"
+            class="py-4 rounded-lg my-color-light-bg hover:bg-blue-600 hover:text-white px-4 md:w-[350px] text-center md:text-xl grow"
+            target="_blank">La
+            route de la Beauce</a>
+          <a href="https://www.bonjourquebec.com/fr-ca/ou-aller/itineraires-et-routes/route-de-la-nouvelle-france"
+            class="py-4 rounded-lg my-color-light-bg hover:bg-blue-600 hover:text-white px-4 md:w-[350px] text-center md:text-xl grow"
+            target="_blank">La
+            route de la Nouvelle-France</a>
+          <a href="https://www.bonjourquebec.com/fr-ca/ou-aller/itineraires-et-routes/la-route-du-fjord"
+            class="py-4 rounded-lg my-color-light-bg hover:bg-blue-600 hover:text-white px-4 md:w-[350px] text-center md:text-xl grow"
+            target="_blank">La
+            route du Fjord</a>
+          <a href="https://www.bonjourquebec.com/fr-ca/ou-aller/itineraires-et-routes/la-route-du-fleuve"
+            class="py-4 rounded-lg my-color-light-bg hover:bg-blue-600 hover:text-white px-4 md:w-[350px] text-center md:text-xl grow"
+            target="_blank">La
+            route du Fleuve</a>
+          <a href="https://www.bonjourquebec.com/fr-ca/ou-aller/itineraires-et-routes/la-route-des-frontieres"
+            class="py-4 rounded-lg my-color-light-bg hover:bg-blue-600 hover:text-white px-4 md:w-[350px] text-center md:text-xl grow"
+            target="_blank">La
+            route des Frontières</a>
+          <a href="https://www.bonjourquebec.com/fr-ca/ou-aller/itineraires-et-routes/la-route-des-vins"
+            class="py-4 rounded-lg my-color-light-bg hover:bg-blue-600 hover:text-white px-4 md:w-[350px] text-center md:text-xl grow"
+            target="_blank">La
+            route des Vins</a>
+          <a href="https://www.bonjourquebec.com/fr-ca/ou-aller/itineraires-et-routes/route-des-belles-histoires"
+            class="py-4 rounded-lg my-color-light-bg hover:bg-blue-600 hover:text-white px-4 md:w-[350px] text-center md:text-xl grow"
+            target="_blank">La
+            route des Belles-Histoires</a>
+          <a href="https://www.bonjourquebec.com/fr-ca/ou-aller/itineraires-et-routes/la-route-des-montagnes"
+            class="py-4 rounded-lg my-color-light-bg hover:bg-blue-600 hover:text-white px-4 md:w-[350px] text-center md:text-xl grow"
+            target="_blank">La
+            route des Montagnes</a>
 
 
-        <!-- <form id="form" class=" mt-10" action="confirmation.html" onsubmit="return validateForm()" novalidate> -->
-        <!-- <form id="form" name="form" class=" mt-10" action="confirmation.html" onsubmit="return validateForm()" method="post" novalidate> -->
-        <form id="form" name="form" class=" mt-10" action="confirmation.html" onsubmit="return validateForm()"
-          novalidate>
-          <h3 class="my-5">Vos informations:</h3>
-          <div class="grid gap-6 md:grid-cols-2">
-            <div class="relative z-0">
-              <input type="text" name="firstName" id="firstName"
-                class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
-                placeholder=" " />
-              <label
-                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Prénom</label>
-              <div class="error-message text-red-600"></div>
-            </div>
-            <div class="relative z-0">
-              <input type="text" name="lastName" id="lastName"
-                class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
-                placeholder=" " />
-              <label
-                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Nom
-                de famille</label>
-              <div class="error-message  text-red-600"></div>
-            </div>
-            <div class="relative z-0">
-              <input type="tel" name="phone" id="phone"
-                class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
-                placeholder=" " />
-              <label
-                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Téléphone</label>
-              <div class="error-message  text-red-600"></div>
-            </div>
-            <div class="relative z-0">
-              <input type="email" name="email" id="email"
-                class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
-                placeholder=" " />
-              <label
-                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Courriel</label>
-              <div class="error-message  text-red-600"></div>
-            </div>
 
-          </div>
 
-          <h3 class="my-5">Informations de l'endroit recommandé:</h3>
-          <div class="grid gap-6 md:grid-cols-2">
-            <!-- TODO Corriger la grid -->
-            <div class="relative z-0 col-span-2">
-              <input type="text" name="spotName" id="spotName"
-                class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
-                placeholder=" " />
-              <label
-                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Nom
-                de votre spot</label>
-              <div class="error-message  text-red-600"></div>
-            </div>
-            <div class="relative z-0">
-              <input type="tel" name="spotPhone" id="spotPhone"
-                class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
-                placeholder=" " />
-              <label
-                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Téléphone</label>
-              <div class="error-message  text-red-600"></div>
-            </div>
-            <div class="relative z-0">
-              <input type="url" name="spotUrl" id="spotUrl"
-                class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
-                placeholder=" " />
-              <label
-                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Site
-                web</label>
-              <div class="error-message  text-red-600"></div>
-            </div>
-            <div class="relative z-0 col-span-2">
-              <input type="text" name="spotAddress" id="spotAddress"
-                class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
-                placeholder=" " />
-              <label
-                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Adresse</label>
-              <div class="error-message  text-red-600"></div>
-            </div>
-            <div class="relative z-0 col-span-2">
-              <textarea name="spotDescription" id="spotDescription" rows="5"
-                class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
-                placeholder=" "></textarea>
-              <label
-                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Description</label>
-              <div class="error-message  text-red-600"></div>
-            </div>
-          </div>
 
-          <!-- <button type="submit" class="mt-5 rounded-md bg-black px-10 py-2 text-white">Soumettre</button> -->
-          <input type="submit" class="mt-5 rounded-md bg-black px-10 py-2 text-white" value="Soumettre" />
-        </form>
+
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Section activité -->
+    <section class="col-span-12 grid grid-cols-12 gap-6">
+
+      <!-- Randonnée -->
+      <div
+        class="col-span-12 sm:col-span-10 sm:col-start-2 lg:col-span-6 lg:col-start-auto xl:col-span-4 2xl:col-span-3 py-4 px-8 shadow-lg rounded-lg mt-10">
+        <div class="flex justify-center gap-x-2 md:justify-end -mt-10">
+          <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
+            src="./img/pastilles/Saison-ete.png">
+          <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
+            src="./img/pastilles/Saison-printemps.png">
+          <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
+            src="./img/pastilles/Saison-automne.png">
+          <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
+            src="./img/pastilles/Saison-hiver.png">
+        </div>
+        <div>
+          <h2 class="text-gray-800 text-3xl font-semibold">Randonnée</h2>
+          <p class="mt-2 text-gray-600">La randonnée en pleine nature offre une excellente opportunité de se ressourcer
+            tout en explorant de magnifiques
+            paysages.</p>
+        </div>
+      </div>
+
+      <!-- Raquette -->
+      <div
+        class="col-span-12 sm:col-span-10 sm:col-start-2 lg:col-span-6 lg:col-start-auto xl:col-span-4 2xl:col-span-3 py-4 px-8 shadow-lg rounded-lg mt-10">
+        <div class="flex justify-center md:justify-end -mt-10">
+          <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
+            src="./img/pastilles/Saison-hiver.png">
+        </div>
+        <div>
+          <h2 class="text-gray-800 text-3xl font-semibold">Raquette</h2>
+          <p class="mt-2 text-gray-600">La randonnée en raquette est une activité hivernale passionnante qui permet aux
+            amateurs de plein air de découvrir des
+            paysages enneigés tout en profitant d'une bonne dose d'exercice.
+          </p>
+        </div>
       </div>
 
 
+      <!-- Photographie -->
+      <div
+        class="col-span-12 sm:col-span-10 sm:col-start-2 lg:col-span-6 lg:col-start-auto xl:col-span-4 2xl:col-span-3 py-4 px-8 shadow-lg rounded-lg mt-10">
+        <div class="flex justify-center gap-x-2 md:justify-end -mt-10">
+          <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
+            src="./img/pastilles/Saison-ete.png">
+          <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
+            src="./img/pastilles/Saison-printemps.png">
+          <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
+            src="./img/pastilles/Saison-automne.png">
+          <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
+            src="./img/pastilles/Saison-hiver.png">
+        </div>
+        <div>
+          <h2 class="text-gray-800 text-3xl font-semibold">Photographie</h2>
+          <p class="mt-2 text-gray-600">La photographie permet de capturer des moments uniques et de partager des
+            histoires à travers l'objectif de l'appareil
+            photo.</p>
+        </div>
+      </div>
+
+      <!-- Paddle board -->
+      <div
+        class="col-span-12 sm:col-span-10 sm:col-start-2 lg:col-span-6 lg:col-start-auto xl:col-span-4 2xl:col-span-3 py-4 px-8 shadow-lg rounded-lg mt-10">
+        <div class="flex justify-center md:justify-end -mt-10">
+          <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
+            src="./img/pastilles/Saison-ete.png">
+        </div>
+        <div>
+          <h2 class="text-gray-800 text-3xl font-semibold">Planches à pagaie</h2>
+          <p class="mt-2 text-gray-600">La planche à pagaie offre une manière apaisante de naviguer sur l'eau tout en
+            renforçant son corps et en profitant de la
+            nature environnante.
+          </p>
+        </div>
+      </div>
+
+      <!-- Escalade -->
+      <div
+        class="col-span-12 sm:col-span-10 sm:col-start-2 lg:col-span-6 lg:col-start-auto xl:col-span-4 2xl:col-span-3 py-4 px-8 shadow-lg rounded-lg mt-10">
+        <div class="flex justify-center gap-x-2 md:justify-end -mt-10">
+          <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
+            src="./img/pastilles/Saison-ete.png">
+          <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
+            src="./img/pastilles/Saison-printemps.png">
+          <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
+            src="./img/pastilles/Saison-automne.png">
+          <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
+            src="./img/pastilles/Saison-hiver.png">
+        </div>
+        <div>
+          <h2 class="text-gray-800 text-3xl font-semibold">Escalade</h2>
+          <p class="mt-2 text-gray-600">Pour faire plaisir à Laurent, ce n'est pas pour moi. Pas assez folle pour me
+            suspendre dans le vide!!</p>
+        </div>
+      </div>
+
+      <!-- Natation -->
+      <div
+        class="col-span-12 sm:col-span-10 sm:col-start-2 lg:col-span-6 lg:col-start-auto xl:col-span-4 2xl:col-span-3 py-4 px-8 shadow-lg rounded-lg mt-10">
+        <div class="flex justify-center md:justify-end -mt-10">
+          <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
+            src="./img/pastilles/Saison-ete.png">
+        </div>
+        <div>
+          <h2 class="text-gray-800 text-3xl font-semibold">Natation</h2>
+          <p class="mt-2 text-gray-600">La natation est une évasion rafraîchissante dans le monde liquide, où l'on peut
+            se sentir à la fois libre et en harmonie
+            avec l'eau.
+          </p>
+        </div>
+      </div>
+
+      <!-- Chasse aux produits locaux -->
+      <div
+        class="col-span-12 sm:col-span-10 sm:col-start-2 lg:col-span-6 lg:col-start-auto xl:col-span-4 2xl:col-span-3 py-4 px-8 shadow-lg rounded-lg mt-10">
+        <div class="flex justify-center gap-x-2 md:justify-end -mt-10">
+          <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
+            src="./img/pastilles/Saison-ete.png">
+          <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
+            src="./img/pastilles/Saison-printemps.png">
+          <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
+            src="./img/pastilles/Saison-automne.png">
+          <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
+            src="./img/pastilles/Saison-hiver.png">
+        </div>
+        <div>
+          <h2 class="text-gray-800 text-3xl font-semibold">Chasse aux produits locaux</h2>
+          <p class="mt-2 text-gray-600">Voyager, c'est explorer le monde à travers le goût et découvrir les délices
+            uniques des produits locaux. Miam miam!</p>
+        </div>
+      </div>
+
+      <!-- Équitation -->
+      <div
+        class="col-span-12 sm:col-span-10 sm:col-start-2 lg:col-span-6 lg:col-start-auto xl:col-span-4 2xl:col-span-3 py-4 px-8 shadow-lg rounded-lg mt-10">
+        <div class="flex justify-center gap-x-2 md:justify-end -mt-10">
+          <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
+            src="./img/pastilles/Saison-ete.png">
+          <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
+            src="./img/pastilles/Saison-printemps.png">
+          <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
+            src="./img/pastilles/Saison-automne.png">
+        </div>
+        <div>
+          <h2 class="text-gray-800 text-3xl font-semibold">Équitation</h2>
+          <p class="mt-2 text-gray-600">L'équitation au Québec offre une expérience équestre exceptionnelle, avec ses
+            magnifiques paysages et ses sentiers pittoresques.</p>
+        </div>
+      </div>
+
+      <!-- Vélo -->
+      <div
+        class="col-span-12 sm:col-span-10 sm:col-start-2 lg:col-span-6 lg:col-start-auto xl:col-span-4 2xl:col-span-3 py-4 px-8 shadow-lg rounded-lg mt-10">
+        <div class="flex justify-center gap-x-2 md:justify-end -mt-10">
+          <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
+            src="./img/pastilles/Saison-ete.png">
+          <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
+            src="./img/pastilles/Saison-printemps.png">
+          <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
+            src="./img/pastilles/Saison-automne.png">
+        </div>
+        <div>
+          <h2 class="text-gray-800 text-3xl font-semibold">Vélo</h2>
+          <p class="mt-2 text-gray-600">Pédaler le long des pistes cyclables offre une liberté inégalée pour explorer la
+            nature tout en restant actif.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Section infolettre -->
+    <section class="col-span-12 my-color-light-bg p-6 rounded-lg">
+      <h2 class="title-accent text-5xl my-8">Inscrivez-vous à notre infolettre</h2>
+      <p>Trouver l'inspiration pour découvrir le Québec</p>
+      <form id="form" name="form" class="mt-6" action="confirmation.html" onsubmit="return validateFormInfoletter()"
+        novalidate>
+
+        <div class="flex flex-col md:flex-row relative z-0">
+          <div class="w-full md:pr-6">
+            <input type="text" name="mail-infoletter" id="mail-infoletter"
+              class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-xl text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+              placeholder="Votre courriel" />
+
+            <div class="error-message text-red-600"></div>
+          </div>
+
+          <div class="flex justify-center md:justify-end">
+            <input type="submit" class="mb-5 rounded-full bg-blue-600 hover:bg-blue-800 px-12 py-4 text-white"
+              value="Soumettre" />
+          </div>
+        </div>
+
+      </form>
     </section>
 
 
 
+
+
   </main>
-  <footer class="col-span-12 bg-white dark:bg-gray-900">
-    <hr class="my-6 border-gray-100 dark:border-gray-700 lg:my-8 shadow-sm">
-    <div class="flex flex-col flex-wrap items-center px-5 mx-auto md:flex-row md:justify-between mb-6 lg:m-8">
-      <div class="flex flex-col lg:flex-row items-center md:items-start order-first mb-4 md:mb-0">
-        <span class="text-sm text-gray-500 mr-5">Isabelle langlois</span>
-        <span class="text-sm text-gray-500 mr-5">Technique d'intégration des interfaces Web 2</span>
-        <span class="text-sm text-gray-500 ">Cegep de Trois-Rivières</span>
-      </div>
-      <div class="flex  mt-4 space-x-5 sm:justify-center sm:mt-0">
-        <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-          <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-            viewBox="0 0 8 19">
-            <path fill-rule="evenodd"
-              d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
-              clip-rule="evenodd" />
-          </svg>
-          <span class="sr-only">Facebook page</span>
-        </a>
-        <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-          <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-            viewBox="0 0 21 16">
-            <path
-              d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
-          </svg>
-          <span class="sr-only">Discord community</span>
-        </a>
-        <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-          <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-            viewBox="0 0 20 17">
-            <path fill-rule="evenodd"
-              d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
-              clip-rule="evenodd" />
-          </svg>
-          <span class="sr-only">Twitter page</span>
-        </a>
-        <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-          <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-            viewBox="0 0 20 20">
-            <path fill-rule="evenodd"
-              d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
-              clip-rule="evenodd" />
-          </svg>
-          <span class="sr-only">GitHub account</span>
-        </a>
-        <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-          <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-            viewBox="0 0 20 20">
-            <path fill-rule="evenodd"
-              d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
-              clip-rule="evenodd" />
-          </svg>
-          <span class="sr-only">Dribbble account</span>
-        </a>
+  <footer class="container grid grid-cols-12 mx-auto">
+    <div class="col-span-12 bg-white dark:bg-gray-900">
+      <hr class="my-6 border-gray-100 dark:border-gray-700 lg:my-8 shadow-sm">
+      <div class="flex flex-col flex-wrap items-center px-5 mx-auto md:flex-row md:justify-between mb-6 lg:m-8">
+        <div class="flex flex-col lg:flex-row items-center md:items-start order-first mb-4 md:mb-0">
+          <span class="text-sm text-gray-500 mr-5">Isabelle langlois</span>
+          <span class="text-sm text-gray-500 mr-5">Technique d'intégration des interfaces Web 2</span>
+          <span class="text-sm text-gray-500 ">Cegep de Trois-Rivières</span>
+        </div>
+        <div class="flex  mt-4 space-x-5 sm:justify-center sm:mt-0">
+          <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+              viewBox="0 0 8 19">
+              <path fill-rule="evenodd"
+                d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                clip-rule="evenodd" />
+            </svg>
+            <span class="sr-only">Facebook page</span>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+              viewBox="0 0 21 16">
+              <path
+                d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
+            </svg>
+            <span class="sr-only">Discord community</span>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+              viewBox="0 0 20 17">
+              <path fill-rule="evenodd"
+                d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                clip-rule="evenodd" />
+            </svg>
+            <span class="sr-only">Twitter page</span>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+              viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                clip-rule="evenodd" />
+            </svg>
+            <span class="sr-only">GitHub account</span>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+              viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                clip-rule="evenodd" />
+            </svg>
+            <span class="sr-only">Dribbble account</span>
+          </a>
+        </div>
       </div>
     </div>
   </footer>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 </body>
 
 </html>

@@ -26,7 +26,7 @@ body {
 }
 
 .my-color-light-bg {
-  background-color: variables.$color-blue-light;
+  background-color: variables.$color-blue-light !important;
 }
 .my-color-bg {
   background-color: variables.$color-blue;

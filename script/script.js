@@ -8,6 +8,7 @@ const spotPhone = document.querySelector("#spotPhone");
 const spotUrl = document.querySelector("#spotUrl");
 const spotAddress = document.querySelector("#spotAddress");
 const spotDescription = document.querySelector("#spotDescription");
+const mailInfoletter = document.querySelector("#mail-infoletter");
 
 const validateForm = () => {
   let noError = [];
@@ -98,6 +99,30 @@ const validateForm = () => {
 
   //console.log('noError', noError);
   if (noError.length === 9 && !noError.includes(false)) {
+    console.log("9");
+    return true;
+  } else {
+    return false;
+  }
+};
+
+const validateFormInfoletter = () => {
+  let noError = [];
+
+  // valider courriel
+  if (mailInfoletter.value.trim() === "") {
+    setError(mailInfoletter, "Veuillez inscrire un courriel");
+    noError.push(false);
+  } else if (!validateEmail(mailInfoletter.value.trim())) {
+    setError(mailInfoletter, "Veuillez inscrire un courriel valide");
+    noError.push(false);
+  } else {
+    setSuccess(mailInfoletter);
+    noError.push(true);
+  }
+
+  //console.log('noError', noError);
+  if (noError.length === 1 && !noError.includes(false)) {
     console.log("9");
     return true;
   } else {

@@ -24,7 +24,7 @@ body {
 }
 
 .my-color-light-bg {
-  background-color: rgb(218, 230, 240);
+  background-color: rgb(218, 230, 240) !important;
 }
 
 .my-color-bg {
