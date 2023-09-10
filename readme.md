@@ -19,6 +19,7 @@ Et autant en profiter pour montrer mes photos également.
 - [Dropdown - Multi Level Dropdown Menu with Animation](https://flowbite.com/docs/components/carousel/) dans la deuxième section de la page index.html
 - [Card - Testimonial card](https://tailwindcomponents.com/component/testimonial-card) dans la troisième section de la page index.html et dans les tabs de la page ou-aller.html
 - [Tabs - Interactive tabs](https://flowbite.com/docs/components/tabs/) page ou-aller.html
+- [Bandeau - Hero section](https://tailwindcomponents.com/component/hero-section-3) page ou-aller.html
 
 ## Style
 

@@ -19,6 +19,18 @@ body {
   font-family: "Lora", serif;
 }
 
+.title-accent {
+  font-family: "Lora", serif;
+}
+
+.my-color-light-bg {
+  background-color: rgb(218, 230, 240);
+}
+
+.my-color-bg {
+  background-color: rgb(20, 114, 191);
+}
+
 header .header__link:hover {
   color: rgb(20, 114, 191);
 }

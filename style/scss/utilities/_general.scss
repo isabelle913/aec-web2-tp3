@@ -20,3 +20,14 @@ body {
     font-family: variables.$font-accent;
   }
 }
+
+.title-accent {
+  font-family: variables.$font-accent;
+}
+
+.my-color-light-bg {
+  background-color: variables.$color-blue-light;
+}
+.my-color-bg {
+  background-color: variables.$color-blue;
+}
