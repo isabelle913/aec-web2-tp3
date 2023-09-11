@@ -16,7 +16,6 @@ Et autant en profiter pour montrer mes photos également.
 - [Header - Tailwind CSS Header](https://tailwindcomponents.com/component/tailwind-css-header)
 - [Footer - Social media icons](https://flowbite.com/docs/components/footer/) Très modifié pour s'adapter au header!
 - [Carrousel - Tailwind CSS Carousel - Flowbite](https://flowbite.com/docs/components/carousel/) première section de la page index.html en petit écran seulement
-- [Dropdown - Multi Level Dropdown Menu with Animation](https://tailwindcomponents.com/component/nestable-dropdown-menu) dans la deuxième section de la page index.html
 - [Card - Testimonial card](https://tailwindcomponents.com/component/testimonial-card) dans la troisième section de la page index.html et dans les tabs de la page ou-aller.html
 - [Tabs - Interactive tabs](https://flowbite.com/docs/components/tabs/) page ou-aller.html
 - [Bandeau - Hero section](https://tailwindcomponents.com/component/hero-section-3) page ou-aller.html
@@ -37,12 +36,12 @@ Et autant en profiter pour montrer mes photos également.
 
 ## Conception et créatrice
 
-Isabelle Langlois
+Isabelle Langlois #8548956
 
-Lien du [GItHub](https://github.com/isabelle913/aec-web2-tp3)
+- Lien du [GitHub](https://github.com/isabelle913/aec-web2-tp3)
+- Lien du [Pages](https://isabelle913.github.io/aec-web2-tp3/)
 
 ## Inspirations
 
-Inspiration, code snippets, etc.
-
+- [Site Bonjour Québec](https://www.bonjourquebec.com/fr-ca)
 - [Palette couleur du Québec](https://design.quebec.ca/bases/couleurs#c118192)

@@ -1,4 +1,3 @@
-// @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap");
 @use "variables";
 
 *,
@@ -13,13 +12,6 @@ body {
   background-color: #fff;
   font-family: variables.$font-general;
 }
-.saison-topic {
-  background-color: variables.$color-blue-light;
-
-  &__text {
-    font-family: variables.$font-accent;
-  }
-}
 
 .title-accent {
   font-family: variables.$font-accent;
@@ -28,6 +20,7 @@ body {
 .my-color-light-bg {
   background-color: variables.$color-blue-light !important;
 }
+
 .my-color-bg {
   background-color: variables.$color-blue;
 }

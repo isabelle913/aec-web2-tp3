@@ -4,8 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="Visiter le Québec"
-    content="Vous trouverez une foule d'information nécessaire à la planification d'un road trip au Québec">
+    content="Je vous recommande mes endroits préférés pour trouvez des produits locaux, faire des activités ainsi que mes 'spots' photo">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- TODO Erreur validation -->
   <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
   <meta name="theme-color" content="#1472BF">
   <title>Visiter le Québec</title>
@@ -20,29 +21,32 @@
   <link rel="apple-touch-icon" href="./img/icons-manifest/logo192.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="./script/script.js" defer></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet">
 </head>
 
 <body>
-
+  <a class="screen-reader-text border-none h-px -m-px overflow-hidden p-0 absolute w-px" href="#main">Aller au contenu
+    principal</a>
 
   <header class="container grid grid-cols-12 mx-auto">
     <div class="col-span-12 w-full text-gray-700 bg-white border-t border-gray-100 shadow-sm body-font">
       <div class="flex flex-col flex-wrap items-center p-5 mx-auto md:flex-row">
-
         <nav class="flex flex-wrap items-center text-base lg:w-2/5 md:ml-auto">
-          <a href="index.html" class="mr-5 text-xl header__link hover:underline hover:underline-offset-8">Accueil</a>
-          <a href="ou-aller.html" class="mr-5 text-xl header__link--active underline underline-offset-8">Où aller</a>
-          <a href="quoi-faire.html" class="text-xl header__link hover:underline hover:underline-offset-8">Quoi-faire</a>
+          <a href="index.html"
+            class="mr-5 text-xl header__link hover:underline hover:underline-offset-8 focus:outline-none focus:bg-blue-100 rounded-lg focus:p-2">Accueil</a>
+          <a href="ou-aller.html"
+            class="mr-5 text-xl header__link--active underline underline-offset-8 focus:outline-none focus:bg-blue-100 rounded-lg focus:p-2">Où
+            aller</a>
+          <a href="quoi-faire.html"
+            class="text-xl header__link hover:underline hover:underline-offset-8 focus:outline-none focus:bg-blue-100 rounded-lg focus:p-2">Quoi-faire</a>
         </nav>
         <a href="index.html" class="header__logo text-7xl flex items-center order-first mb-4 md:mb-0">
           Visiter le Québec</a>
-
-
       </div>
+    </div>
   </header>
 
-  <main>
+  <main id="main">
 
     <!-- Section bandeau -->
     <section class='container grid grid-cols-12 mx-auto'>
@@ -50,14 +54,12 @@
         <div class="w-full bg-cover bg-bottom py-32" style="background-image: url(./img/bandeau/idm-mademoiselle.jpg);">
           <div class="container mx-auto text-center text-white">
             <h1 class="text-5xl font-medium mb-20 title-accent">Toutes les régions du Québec sont magnifiques</h1>
-
             <a href="https://www.bonjourquebec.com/fr-ca"
               class="text-white py-4 px-12 rounded-full my-color-bg hover:bg-blue-800" target="_blank">Site
               Bonjour
               Québec</a>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -65,7 +67,6 @@
     <section class='container grid grid-cols-12 mx-auto' id="rive-sud">
       <div class="col-span-12">
         <h2 class="title-accent text-center text-5xl my-8">Rive-sud du fleuve</h2>
-
         <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
           <ul class="flex flex-col md:flex-row  -mb-px text-xl font-medium text-center" id="myTab"
             data-tabs-toggle="#myTabContent" role="tablist">
@@ -105,11 +106,12 @@
                 class="col-span-12 2xl:col-span-6 mx-auto  py-4 px-8 bg-white shadow-lg rounded-lg mt-20 ou-aller--bg sm:bg-none">
                 <div class="flex justify-center md:justify-end -mt-16">
                   <img class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
-                    src="./img/pastilles/photographie.png">
+                    src="./img/pastilles/photographie.png" alt="Pastille représentent la photographie">
                 </div>
                 <div class="flex flex-col  md:flex-row">
                   <div class="md:block md:w-1/3 md:pr-4 self-center pb-4 md:pb-0">
-                    <img class="rounded-lg self-center" src="./img/ou-aller/riviere-la-guerre.jpg" alt="">
+                    <img class="rounded-lg self-center" src="./img/ou-aller/riviere-la-guerre.jpg"
+                      alt="Une église en ruine">
                   </div>
                   <div class="md:w-2/3">
                     <p class="text-gray-800 text-3xl font-semibold">Rivière-La Guerre</p>
@@ -127,7 +129,7 @@
                 class="col-span-12 lg:col-span-6 mx-auto  py-4 px-8 bg-white shadow-lg rounded-lg mt-20 ou-aller--bg sm:bg-none w-full">
                 <div class="flex justify-end -mt-16">
                   <img class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
-                    src="./img/pastilles/alimentation-pastille.png">
+                    src="./img/pastilles/alimentation-pastille.png" alt="Pastille représentent un panier d'achat">
                 </div>
                 <div class="flex flex-col  md:flex-row">
                   <div>
@@ -139,9 +141,6 @@
                   </div>
                 </div>
               </div>
-
-
-
             </div>
           </div>
 
@@ -155,27 +154,22 @@
                 class="col-span-12 lg:col-span-6 mx-auto  pt-4 pb-8 px-8 bg-white shadow-lg rounded-lg mt-20 ou-aller--bg sm:bg-none w-full">
                 <div class="flex justify-end -mt-16">
                   <img class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
-                    src="./img/pastilles/activite.png">
+                    src="./img/pastilles/activite.png" alt="Pastille représentent l'activité">
                 </div>
                 <div class="flex flex-col justify-between h-full">
                   <div>
                     <p class="text-gray-800 text-3xl font-semibold">Parc régional de la rivière Gentilly</p>
                     <p class="mt-2 text-gray-600">Camping - activité</p>
-                    <p class="mt-2 text-gray-600">Il faut que j'aille camper là un jour.
-                    </p>
-
+                    <p class="mt-2 text-gray-600">Il faut que j'aille camper là un jour.</p>
                     <p class="mt-2 text-gray-600">1000 Av. des Flamants, Sainte-Marie-de-Blandford, QC G0X 2W0</p>
-
                   </div>
                   <div class="flex justify-end mt-6">
-                    <!--   class=" py-4 px-12 rounded-full my-color-bg hover:bg-blue-800" -->
                     <a href="http://rivieregentilly.com/"
                       class="text-white my-color-bg hover:bg-blue-800 font-medium rounded-full text-sm px-12 py-4 mr-2 mb-2"
                       target="_blank">Site web</a>
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
 
@@ -189,7 +183,7 @@
                 class="col-span-12 lg:col-span-6 mx-auto  pt-4 pb-8 px-8 bg-white shadow-lg rounded-lg mt-20 ou-aller--bg sm:bg-none w-full">
                 <div class="flex justify-end -mt-16">
                   <img class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
-                    src="./img/pastilles/alimentation-pastille.png">
+                    src="./img/pastilles/alimentation-pastille.png" alt="Pastille représentent un panier d'achat">
                 </div>
                 <div class="flex flex-col justify-between">
                   <div>
@@ -197,14 +191,10 @@
                     <p class="text-gray-800 text-3xl font-semibold">fromages fermiers bio de chèvre à découvrir</p>
                     <p class="mt-2 text-gray-600">Produit du terroir</p>
                     <p class="mt-2 text-gray-600">Humm c'est tellement bon, surtout les sandwichs. Belle place pour
-                      relaxer après randonnée. A voir!
-                    </p>
-
+                      relaxer après randonnée. A voir!</p>
                     <p class="mt-2 text-gray-600">212 Rang de la Pointe-Lévis, Saint-Damien-de-Buckland, QC G0R 2Y0</p>
-
                   </div>
                   <div class="flex justify-end mt-6">
-
                     <a href="http://cassisetmelisse.com/accueil/"
                       class="text-white my-color-bg hover:bg-blue-800 font-medium rounded-full text-sm px-12 py-4 mr-2 mb-2"
                       target="_blank">Site web</a>
@@ -212,34 +202,28 @@
                 </div>
               </div>
 
-
               <!-- Carte La Seigneurie des Aulnaies-->
               <div
                 class="col-span-12 lg:col-span-6 mx-auto  pt-4 pb-8 px-8 bg-white shadow-lg rounded-lg mt-20 ou-aller--bg sm:bg-none w-full">
                 <div class="flex justify-end -mt-16">
                   <img class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
-                    src="./img/pastilles/alimentation-pastille.png">
+                    src="./img/pastilles/alimentation-pastille.png" alt="Pastille représentent un panier d'achat">
                 </div>
                 <div class="flex flex-col justify-between h-full">
                   <div>
                     <p class="text-gray-800 text-3xl font-semibold">La Seigneurie des Aulnaies</p>
                     <p class="mt-2 text-gray-600">Produit du terroir</p>
                     <p class="mt-2 text-gray-600">Moulin et vente pain fait avec farine du moulin Steve est le meunier.
-                      Paul le jardinier
-                    </p>
-
+                      Paul le jardinier</p>
                     <p class="mt-2 text-gray-600">525 Rte de la Seigneurie, Saint-Roch-des-Aulnaies, QC G0R 4E0</p>
-
                   </div>
                   <div class="flex justify-end mt-6">
-
                     <a href="https://www.laseigneuriedesaulnaies.qc.ca/"
                       class="text-white my-color-bg hover:bg-blue-800 font-medium rounded-full text-sm px-12 py-4 mr-2 mb-2"
                       target="_blank">Site web</a>
                   </div>
                 </div>
               </div>
-
 
             </div>
           </div>
@@ -254,14 +238,13 @@
                 class="col-span-12 lg:col-span-6 mx-auto  py-4 px-8 bg-white shadow-lg rounded-lg mt-20 ou-aller--bg sm:bg-none w-full">
                 <div class="flex justify-end -mt-16">
                   <img class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
-                    src="./img/pastilles/alimentation-pastille.png">
+                    src="./img/pastilles/alimentation-pastille.png" alt="Pastille représentent un panier d'achat">
                 </div>
                 <div class="flex flex-col  md:flex-row">
                   <div>
                     <p class="text-gray-800 text-3xl font-semibold">Gilligan</p>
                     <p class="mt-2 text-gray-600">Restaurant</p>
-                    <p class="mt-2 text-gray-600">Recommandé par Denise Gaudreau, sur la ToDo.
-                    </p>
+                    <p class="mt-2 text-gray-600">Recommandé par Denise Gaudreau, sur la ToDo.</p>
                     <p class="mt-2 text-gray-600">193 Av. Champlain, Philipsburg, QC J0J 1N0</p>
                   </div>
                 </div>
@@ -272,14 +255,13 @@
                 class="col-span-12 lg:col-span-6 mx-auto  py-4 px-8 bg-white shadow-lg rounded-lg mt-20 ou-aller--bg sm:bg-none w-full">
                 <div class="flex justify-end -mt-16">
                   <img class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
-                    src="./img/pastilles/activite.png">
+                    src="./img/pastilles/activite.png" alt="Pastille représentent l'activité">
                 </div>
                 <div class="flex flex-col  md:flex-row">
                   <div>
                     <p class="text-gray-800 text-3xl font-semibold">Mont Shefford</p>
                     <p class="mt-2 text-gray-600">Randonnée</p>
-                    <p class="mt-2 text-gray-600">Aller marcher.
-                    </p>
+                    <p class="mt-2 text-gray-600">Aller marcher.</p>
                     <p class="mt-2 text-gray-600">La Haute-Yamaska, QC J2M 1N9</p>
                   </div>
                 </div>
@@ -290,18 +272,18 @@
                 class="col-span-12 2xl:col-span-6 mx-auto  py-4 px-8 bg-white shadow-lg rounded-lg mt-20 ou-aller--bg sm:bg-none">
                 <div class="flex justify-center md:justify-end -mt-16">
                   <img class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
-                    src="./img/pastilles/photographie.png">
+                    src="./img/pastilles/photographie.png" alt="Pastille représentent la photographie">
                 </div>
                 <div class="flex flex-col  md:flex-row">
                   <div class="md:block md:w-1/3 md:pr-4 self-center pb-4 md:pb-0">
-                    <img class="rounded-lg self-center" src="./img/ou-aller/vieille-prison.jpg" alt="">
+                    <img class="rounded-lg self-center" src="./img/ou-aller/vieille-prison.jpg"
+                      alt="Photo de la vieille prison de Sherbrooke.">
                   </div>
                   <div class="md:w-2/3">
                     <p class="text-gray-800 text-3xl font-semibold">Vieille prison</p>
                     <p class="mt-2 text-gray-600">Photographie</p>
                     <p class="mt-2 text-gray-600">La prison Winter est une ancienne prison canadienne construite en 1865
-                      et en fonction jusqu'en 1990 à Sherbrooke,
-                    </p>
+                      et en fonction jusqu'en 1990 à Sherbrooke.</p>
                     <p class="mt-2 text-gray-600">Prison Winter, Rue Winter, Sherbrooke, QC J1H 4E7</p>
                   </div>
                 </div>
@@ -312,25 +294,19 @@
                 class="col-span-12 lg:col-span-6 mx-auto  py-4 px-8 bg-white shadow-lg rounded-lg mt-20 ou-aller--bg sm:bg-none w-full">
                 <div class="flex justify-end -mt-16">
                   <img class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
-                    src="./img/pastilles/activite.png">
+                    src="./img/pastilles/activite.png" alt="Pastille représentent l'activité">
                 </div>
                 <div class="flex flex-col  md:flex-row">
                   <div>
                     <p class="text-gray-800 text-3xl font-semibold">Parc régional du Mont-Ham</p>
                     <p class="mt-2 text-gray-600">Randonnée</p>
-                    <p class="mt-2 text-gray-600">Aller marcher.
-                    </p>
+                    <p class="mt-2 text-gray-600">Aller marcher.</p>
                     <p class="mt-2 text-gray-600">103 Route 257 Ouest, Saint-Joseph-de-Ham-Sud, QC J0B 3J0</p>
                   </div>
                 </div>
               </div>
 
             </div>
-
-
-
-
-
           </div>
         </div>
 
@@ -351,104 +327,111 @@
           <div class="grid gap-6 md:grid-cols-2">
             <div class="relative z-0">
               <input type="text" name="firstName" id="firstName"
-                class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
-                placeholder=" " />
+                class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-xl text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+                placeholder=" ">
               <label
-                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Prénom</label>
+                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-xl text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500"
+                for="firstName">Prénom</label>
               <div class="error-message text-red-600"></div>
             </div>
             <div class="relative z-0">
               <input type="text" name="lastName" id="lastName"
-                class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
-                placeholder=" " />
+                class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-xl text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+                placeholder=" ">
               <label
-                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Nom
+                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-xl text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500"
+                for="lastName">Nom
                 de famille</label>
               <div class="error-message  text-red-600"></div>
             </div>
             <div class="relative z-0">
               <input type="tel" name="phone" id="phone"
-                class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
-                placeholder=" " />
+                class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-xl text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+                placeholder=" ">
               <label
-                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Téléphone</label>
+                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-xl text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500"
+                for="phone">Téléphone</label>
               <div class="error-message  text-red-600"></div>
             </div>
             <div class="relative z-0">
               <input type="email" name="email" id="email"
-                class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
-                placeholder=" " />
+                class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-xl text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+                placeholder=" ">
               <label
-                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Courriel</label>
+                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-xl text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500"
+                for="email">Courriel</label>
               <div class="error-message  text-red-600"></div>
             </div>
-
           </div>
 
           <h3 class="mt-10 mb-5 text-3xl font-semibold">Informations de l'endroit recommandé:</h3>
           <div class="grid gap-6 grid-cols-12">
             <div class="relative z-0 col-span-12">
               <input type="text" name="spotName" id="spotName"
-                class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
-                placeholder=" " />
+                class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-xl text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+                placeholder=" ">
               <label
-                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Nom
+                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-xl text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500"
+                for="spotName">Nom
                 de votre spot</label>
               <div class="error-message  text-red-600"></div>
             </div>
             <div class="relative z-0 col-span-12 md:col-span-6">
               <input type="tel" name="spotPhone" id="spotPhone"
-                class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
-                placeholder=" " />
+                class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-xl text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+                placeholder=" ">
               <label
-                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Téléphone</label>
+                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-xl text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500"
+                for="spotPhone">Téléphone</label>
               <div class="error-message  text-red-600"></div>
             </div>
             <div class="relative z-0 col-span-12 md:col-span-6">
               <input type="url" name="spotUrl" id="spotUrl"
-                class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
-                placeholder=" " />
+                class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-xl text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+                placeholder=" ">
               <label
-                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Site
+                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-xl text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500"
+                for="spotUrl">Site
                 web</label>
               <div class="error-message  text-red-600"></div>
             </div>
             <div class="relative z-0 col-span-12">
               <input type="text" name="spotAddress" id="spotAddress"
-                class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
-                placeholder=" " />
+                class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-xl text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+                placeholder=" ">
               <label
-                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Adresse</label>
+                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-xl text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500"
+                for="spotAddress">Adresse</label>
               <div class="error-message  text-red-600"></div>
             </div>
             <div class="relative z-0 col-span-12">
               <textarea name="spotDescription" id="spotDescription" rows="5"
-                class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+                class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-xl text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
                 placeholder=" "></textarea>
               <label
-                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Description</label>
+                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-xl text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500"
+                for="spotDescription">Description</label>
               <div class="error-message  text-red-600"></div>
             </div>
           </div>
-
-          <div class="flex justify-between">
-            <div class="flex items-start mb-6 self-center ">
+          <div class="flex flex-col sm:flex-row justify-between">
+            <div class="flex items-start mb-6 mt-6 self-center ">
               <div class="flex items-center h-5">
                 <input id="infoletter" aria-describedby="infoletter" type="checkbox"
                   class="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" required="">
               </div>
-              <div class="text-sm ml-3">
+              <div class="text-xl ml-3">
                 <label for="infoletter" class="font-medium text-gray-900 text-lg text-gray-500 pb-1">J'aimerais
                   m'inscrire à
                   l'infolettre</label>
               </div>
             </div>
-            <input type="submit" class="mt-5 rounded-full bg-blue-600 hover:bg-blue-800 px-12 py-4 text-white"
-              value="Soumettre" />
+            <input type="submit"
+              class="mt-5 rounded-full bg-blue-600 hover:bg-blue-800 focus:bg-blue-800 px-12 py-4 text-white"
+              value="Soumettre">
           </div>
         </form>
       </div>
-
     </section>
 
   </main>

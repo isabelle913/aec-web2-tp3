@@ -6,9 +6,9 @@
   <meta name="Visiter le Québec"
     content="Vous trouverez une foule d'information nécessaire à la planification d'un road trip au Québec">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- TODO Erreur validation -->
   <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
   <meta name="theme-color" content="#1472BF">
-  <!-- TODO Modifier titre et description sur chaque page -->
   <title>Visiter le Québec</title>
   <link rel="stylesheet" href="./style/css/normalize.css">
   <link rel="stylesheet" href="./style/css/style.css">
@@ -33,24 +33,31 @@
       });
     }
   </script> -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet">
 </head>
 
 <body>
+  <a class="screen-reader-text border-none h-px -m-px overflow-hidden p-0 absolute w-px" href="#main">Aller au contenu
+    principal</a>
+
   <header class="container grid grid-cols-12 mx-auto">
     <div class="col-span-12 w-full text-gray-700 bg-white border-t border-gray-100 shadow-sm body-font">
       <div class="flex flex-col flex-wrap items-center p-5 mx-auto md:flex-row">
         <nav class="flex flex-wrap items-center text-base lg:w-2/5 md:ml-auto">
-          <a href="index.html" class="mr-5 text-xl header__link--active underline underline-offset-8">Accueil</a>
-          <a href="ou-aller.html" class="mr-5 text-xl header__link hover:underline hover:underline-offset-8">Où
+          <a href="index.html"
+            class="mr-5 text-xl header__link--active underline underline-offset-8 focus:outline-none focus:bg-blue-100 rounded-lg focus:p-2">Accueil</a>
+          <a href="ou-aller.html"
+            class="mr-5 text-xl header__link hover:underline hover:underline-offset-8 focus:outline-none focus:bg-blue-100 rounded-lg focus:p-2">Où
             aller</a>
-          <a href="quoi-faire.html" class="text-xl header__link hover:underline hover:underline-offset-8">Quoi-faire</a>
+          <a href="quoi-faire.html"
+            class="text-xl header__link hover:underline hover:underline-offset-8 focus:outline-none focus:bg-blue-100 rounded-lg focus:p-2  ">Quoi-faire</a>
         </nav>
         <h1 class="header__logo text-7xl flex items-center order-first mb-4 md:mb-0">Visiter le Québec</h1>
       </div>
     </div>
   </header>
-  <main>
+
+  <main id="main">
 
     <!-- Section photo -->
     <section class="container grid grid-cols-12 mx-auto">
@@ -63,27 +70,32 @@
             <!-- Item 1 -->
             <div id="carousel-item-1" class="hidden duration-700 ease-in-out" data-carousel-item>
               <img class="  absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg"
-                alt="..." src="./img/carousel/idm-maison-orange.jpg">
+                alt="Belle maison orange dans un champ vert avec un ciel orageux."
+                src="./img/carousel/idm-maison-orange.jpg">
             </div>
             <!-- Item 2 -->
             <div id="carousel-item-2" class="hidden duration-700 ease-in-out rounded-lg" data-carousel-item>
               <img src="./img/carousel/lana-lac-1000.jpg"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="...">
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg"
+                alt="Chien sur un quai regardent au loin.">
             </div>
             <!-- Item 3 -->
             <div id="carousel-item-3" class="hidden duration-700 ease-in-out" data-carousel-item>
               <img src="./img/carousel/chute-600.jpg"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="...">
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg"
+                alt="Gros plan sur une chute avec des feuilles au couleur d'automne.">
             </div>
             <!-- Item 4 -->
             <div id="carousel-item-4" class="hidden duration-700 ease-in-out" data-carousel-item>
               <img src="./img/carousel/bsp-eglise-600.jpg"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="...">
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg"
+                alt="Paysage champ et montagne au loin.">
             </div>
             <!-- Item 5 -->
             <div id="carousel-item-5" class="hidden duration-700 ease-in-out" data-carousel-item>
               <img src="./img/carousel/couche-soleil-600.jpg"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="...">
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg"
+                alt="Couché de soleil sur le bord de l'eau.">
             </div>
           </div>
           <!-- Slider indicators -->
@@ -131,13 +143,16 @@
         <div class="hidden lg:block">
           <div class="grid grid-cols-12 gap-6">
             <div class="col-span-4">
-              <img class="h-full w-full rounded-lg" src="./img/carousel/idm-maison-orange.jpg" />
+              <img class="h-full w-full rounded-lg" src="./img/carousel/idm-maison-orange.jpg"
+                alt="Belle maison orange dans un champ vert avec un ciel orageux.">
             </div>
             <div class="col-span-4">
-              <img class="h-full w-full rounded-lg" src="./img/carousel/chute-600.jpg" />
+              <img class="h-full w-full rounded-lg" src="./img/carousel/chute-600.jpg"
+                alt="Gros plan sur une chute avec des feuilles au couleur d'automne.">
             </div>
             <div class="col-span-4">
-              <img class="h-full w-full rounded-lg" src="./img/carousel/bsp-eglise-600.jpg" />
+              <img class="h-full w-full rounded-lg" src="./img/carousel/bsp-eglise-600.jpg"
+                alt="Paysage champ et montagne au loin.">
             </div>
           </div>
         </div>
@@ -145,10 +160,9 @@
     </section>
 
     <!-- Section saison -->
-    <section class="saison-topic">
-      <!-- TODO Améliorer le dropdown: largeur du choix de réponse + enregistrer la réponse en JS -->
+    <section class="my-color-light-bg">
       <div class="container grid grid-cols-12 mx-auto p-6">
-        <p class="col-span-12 xl:col-span-8 saison-topic__text text-center text-lg xl:text-xl leading-7 xl:self-center">
+        <h2 class="col-span-12 xl:col-span-8 title-accent text-center text-lg xl:text-xl leading-7 xl:self-center">
           Au Québec,
           les
           activités évoluent au
@@ -157,26 +171,39 @@
           soleil
           estival aux
           chatoyantes couleurs
-          d’automne, en passant par les vivifiantes poudreries d’hiver et la fébrilité du renouveau printanier.</p>
-        <!-- component -->
-        <div class="col-span-12 xl:col-span-4 group inline-block p-6">
-          <button
-            class="outline-none focus:outline-none border px-5 py-3 bg-white rounded-lg flex items-center min-w-32 mx-auto">
-            <span class="pr-1 font-semibold flex-1">Quel est votre saison préféré ?</span>
-            <span>
-              <svg class="fill-current h-4 w-4 transform group-hover:-rotate-180 transition duration-150 ease-in-out"
-                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-              </svg>
-            </span>
-          </button>
-          <ul
-            class="bg-white border rounded-sm transform scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top min-w-32">
-            <li class="rounded-sm px-3 py-1 hover:bg-gray-100">Été</li>
-            <li class="rounded-sm px-3 py-1 hover:bg-gray-100">Automne</li>
-            <li class="rounded-sm px-3 py-1 hover:bg-gray-100">Hivers</li>
-            <li class="rounded-sm px-3 py-1 hover:bg-gray-100">Printemps</li>
-          </ul>
+          d’automne, en passant par les vivifiantes poudreries d’hiver et la fébrilité du renouveau printanier.</h2>
+
+        <div class="col-span-12 xl:col-span-4 mt-6 xl:mt-0 justify-self-center self-center">
+          <button id="dropdownDividerButton" data-dropdown-toggle="dropdownDivider"
+            class="bg-white hover:bg-blue-600 hover:text-white focus:outline-none focus:bg-blue-600 font-medium rounded-lg text-xl px-5 py-2.5 text-center inline-flex items-center justify-between"
+            type="button">Quel est votre saison préféré ? <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 4 4 4-4" />
+            </svg></button>
+
+          <!-- Dropdown menu -->
+          <div id="dropdownDivider"
+            class="z-20 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-80 dark:bg-gray-700 dark:divide-gray-600">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDividerButton">
+              <li>
+                <a href="#"
+                  class="block px-4 py-2 hover:bg-blue-200 dark:hover:bg-gray-600 dark:hover:text-white text-xl">Été</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block px-4 py-2 hover:bg-blue-200 dark:hover:bg-gray-600 dark:hover:text-white text-xl">Automne</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block px-4 py-2 hover:bg-blue-200 dark:hover:bg-gray-600 dark:hover:text-white text-xl">Hivers</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block px-4 py-2 hover:bg-blue-200 dark:hover:bg-gray-600 dark:hover:text-white text-xl">Printemps</a>
+              </li>
+            </ul>
+          </div>
         </div>
 
       </div>
@@ -190,7 +217,7 @@
         style="background-image: url(./img/bg-card/neige.jpg);">
         <div class="flex justify-center md:justify-end -mt-16">
           <img class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
-            src="./img/pastilles/Saison-hiver.png">
+            src="./img/pastilles/Saison-hiver.png" alt="Pastille représentant l'hiver">
         </div>
         <div>
           <h2 class="text-gray-800 text-3xl font-semibold text-white">Hiver</h2>
@@ -207,7 +234,7 @@
       <div class="col-span-12 lg:col-span-6 mx-auto max-w-md xl:max-w-lg py-4 px-8 bg-white shadow-lg rounded-lg my-20">
         <div class="flex justify-center md:justify-end -mt-16">
           <img class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
-            src="./img/pastilles/Saison-printemps.png">
+            src="./img/pastilles/Saison-printemps.png" alt="Pastille représentent le printemps">
         </div>
         <div>
           <h2 class="text-gray-800 text-3xl font-semibold">Printemps</h2>
@@ -226,7 +253,7 @@
       <div class="col-span-12 lg:col-span-6 mx-auto max-w-md xl:max-w-lg py-4 px-8 bg-white shadow-lg rounded-lg my-20">
         <div class="flex justify-center md:justify-end -mt-16">
           <img class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
-            src="./img/pastilles/Saison-automne.png">
+            src="./img/pastilles/Saison-automne.png" alt="Pastille représentent l'automne">
         </div>
         <div>
           <h2 class="text-gray-800 text-3xl font-semibold">Automne</h2>
@@ -245,7 +272,7 @@
         style="background-image: url(./img/bg-card/idm-chateau.jpg);">
         <div class="flex justify-center md:justify-end -mt-16">
           <img class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
-            src="./img/pastilles/Saison-ete.png">
+            src="./img/pastilles/Saison-ete.png" alt="Pastille représentent l'été">
         </div>
         <div>
           <h2 class="text-gray-800 text-3xl font-semibold text-white">Été</h2>

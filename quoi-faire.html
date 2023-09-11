@@ -4,8 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="Visiter le Québec"
-    content="Vous trouverez une foule d'information nécessaire à la planification d'un road trip au Québec">
+    content="Au Québec ce n'est pas le choix d'activité qui manque, j'espère vous inspirez!">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- TODO erreur validation -->
   <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
   <meta name="theme-color" content="#1472BF">
   <title>Visiter le Québec</title>
@@ -20,98 +21,110 @@
   <link rel="apple-touch-icon" href="./img/icons-manifest/logo192.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="./script/script.js" defer></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet">
 </head>
 
 <body>
+  <a class="screen-reader-text border-none h-px -m-px overflow-hidden p-0 absolute w-px" href="#content">Aller au
+    contenu
+    principal</a>
+
   <header class="container grid grid-cols-12 mx-auto">
     <div class="col-span-12 w-full text-gray-700 bg-white border-t border-gray-100 shadow-sm body-font">
       <div class="flex flex-col flex-wrap items-center p-5 mx-auto md:flex-row">
-
         <nav class="flex flex-wrap items-center text-base lg:w-2/5 md:ml-auto">
-          <a href="index.html" class="mr-5 text-xl header__link hover:underline hover:underline-offset-8">Accueil</a>
-          <a href="ou-aller.html" class="mr-5 text-xl header__link hover:underline hover:underline-offset-8">Où
+          <a href="index.html"
+            class="mr-5 text-xl header__link hover:underline hover:underline-offset-8 focus:outline-none focus:bg-blue-100 rounded-lg focus:p-2">Accueil</a>
+          <a href="ou-aller.html"
+            class="mr-5 text-xl header__link hover:underline hover:underline-offset-8 focus:outline-none focus:bg-blue-100 rounded-lg focus:p-2">Où
             aller</a>
-          <a href="quoi-faire.html" class="text-xl header__link--active underline underline-offset-8">Quoi-faire</a>
+          <a href="quoi-faire.html"
+            class="text-xl header__link--active underline underline-offset-8 focus:outline-none focus:bg-blue-100 rounded-lg focus:p-2">Quoi-faire</a>
         </nav>
         <a href="index.html" class="header__logo text-7xl flex items-center order-first mb-4 md:mb-0">
           Visiter le Québec</a>
-
-
       </div>
+    </div>
   </header>
   <main class="container grid grid-cols-12 mx-auto py-6 gap-6">
 
     <!-- section sous-menu aside -->
     <aside class="hidden md:block col-span-4 lg:col-span-3 2xl:col-span-2 rounded-lg my-color-light-bg p-6">
       <p class="border-gray-100 shadow-sm text-xl mb-6">Planifier vos activités</p>
-      <!--    class="text-white my-color-bg hover:bg-blue-800 font-medium rounded-full text-sm px-4 py-4 mr-2 mb-2" -->
       <ul class="grid grid-cols-12">
+        <!-- TODO les erreurs de bouton -->
+        <!-- <li class="col-span-12">
+          <a href="#" tabindex="-1">
+            <button class="p-4 rounded-lg hover:bg-white focus:bg-white focus:outline-none w-full text-start">Activité
+              en été</button>
+          </a>
+        </li> -->
         <li class="col-span-12">
-          <a href="#">
-            <button class="p-4 rounded-lg hover:bg-white w-full text-start">Activité en été</button>
+          <a href="#" class="p-4 rounded-lg hover:bg-white focus:bg-white focus:outline-none w-full text-start">
+            Activité en été
           </a>
         </li>
         <li class="col-span-12">
-          <a href="#">
-            <button class="p-4 rounded-lg hover:bg-white w-full text-start">Quoi faire l'automne</button>
+          <a href="#" class="p-4 rounded-lg hover:bg-white focus:bg-white focus:outline-none w-full text-start">
+            Quoi faire l'automne
           </a>
         </li>
         <li class="col-span-12">
-          <a href="#">
-            <button class="p-4 rounded-lg hover:bg-white w-full text-start">Jouer dehors l'hiver</button>
+          <a href="#" class="p-4 rounded-lg hover:bg-white focus:bg-white focus:outline-none w-full text-start">
+            Jouer dehors l'hiver
           </a>
         </li>
         <li class="col-span-12">
-          <a href="#">
-            <button class="p-4 rounded-lg hover:bg-white w-full text-start">Bienvenue printemps</button>
+          <a href="#" class="p-4 rounded-lg hover:bg-white focus:bg-white focus:outline-none w-full text-start">
+            Bienvenue printemps
           </a>
         </li>
       </ul>
       <p class="border-gray-100 shadow-sm text-xl my-6">Où aller</p>
       <ul class="grid grid-cols-12">
         <li class="col-span-12">
-          <a href="ou-aller.html#rive-sud">
-            <button class="p-4 rounded-lg hover:bg-white w-full text-start">Rive-sud du fleuve</button>
+          <a href="ou-aller.html#rive-sud"
+            class="p-4 rounded-lg hover:bg-white focus:bg-white focus:outline-none w-full text-start">
+            Rive-sud du fleuve
           </a>
         </li>
         <li class="col-span-12">
-          <a href="#">
-            <button class="p-4 rounded-lg hover:bg-white w-full text-start">Rive-nord du fleuve</button>
+          <a href="#" class="p-4 rounded-lg hover:bg-white focus:bg-white focus:outline-none w-full text-start">
+            Rive-nord du fleuve
           </a>
         </li>
         <li class="col-span-12">
-          <a href="#">
-            <button class="p-4 rounded-lg hover:bg-white w-full text-start">Gaspésie</button>
+          <a href="#" class="p-4 rounded-lg hover:bg-white focus:bg-white focus:outline-none w-full text-start">
+            Gaspésie
           </a>
         </li>
         <li class="col-span-12">
-          <a href="#">
-            <button class="p-4 rounded-lg hover:bg-white w-full text-start">Côte-Nord</button>
+          <a href="#" class="p-4 rounded-lg hover:bg-white focus:bg-white focus:outline-none w-full text-start">
+            Côte-Nord
           </a>
         </li>
         <li class="col-span-12">
-          <a href="#">
-            <button class="p-4 rounded-lg hover:bg-white w-full text-start">Eeyou Istchee Baie-James</button>
+          <a href="#" class="p-4 rounded-lg hover:bg-white focus:bg-white focus:outline-none w-full text-start">
+            Eeyou Istchee Baie-James
           </a>
         </li>
         <li class="col-span-12">
-          <a href="#">
-            <button class="p-4 rounded-lg hover:bg-white w-full text-start">Iles-de-la-Madeleine</button>
+          <a href="#" class="p-4 rounded-lg hover:bg-white focus:bg-white focus:outline-none w-full text-start">
+            Iles-de-la-Madeleine
           </a>
         </li>
       </ul>
       <div class="border-gray-100 shadow-sm text-xl my-6">
-        <a href="ou-aller.html#vos-spots">
-          <button class="p-4 rounded-lg hover:bg-white w-full text-start">Pour faire connaitre vos endroits
-            préférez</button>
+        <a href="ou-aller.html#vos-spots"
+          class="p-4 rounded-lg hover:bg-white focus:bg-white focus:outline-none w-full text-start">
+          Pour faire connaitre vos endroits préférés
         </a>
       </div>
     </aside>
 
     <!-- section sous-menu dropdown -->
     <section class="col-span-12 md:hidden flex justify-center">
-
+      <h2 class="hidden">Sous-menu via dropdown</h2>
       <button id="dropdownDividerButton" data-dropdown-toggle="dropdownDivider"
         class="my-color-light-bg hover:bg-blue-600 hover:text-white focus:outline-none  font-medium rounded-lg text-xl px-5 py-2.5 text-center inline-flex items-center w-2/3 justify-between "
         type="button">Planifier vos activités <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
@@ -119,10 +132,9 @@
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             d="m1 1 4 4 4-4" />
         </svg></button>
-
       <!-- Dropdown menu -->
       <div id="dropdownDivider"
-        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 w-full">
+        class="z-40 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 w-full">
         <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDividerButton">
           <li>
             <a href="#"
@@ -185,14 +197,13 @@
             préférez</a>
         </div>
       </div>
-
     </section>
 
-    <div class="col-span-12 md:col-span-8 lg:col-span-9 2xl:col-span-10">
+    <div id="content" class="col-span-12 md:col-span-8 lg:col-span-9 2xl:col-span-10">
 
       <!-- Section gallerie photo -->
       <section>
-
+        <h2 class="hidden">Gallerie photo</h2>
         <!-- Gallerie carrousel petit écran -->
         <div class="lg:hidden p-6">
           <div id="default-carousel" class="relative w-full" data-carousel="slide">
@@ -225,7 +236,6 @@
                   class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg"
                   alt="Paysage d'une ile de la Côte nord perdu dans le brouillard">
               </div>
-
             </div>
             <!-- Slider indicators -->
             <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
@@ -318,71 +328,63 @@
           peut nous
           offrir. Ici, les routes s’écoutent, se vivent et se goûtent.</p>
         <div class="flex flex-wrap justify-center py-6 gap-6">
-
           <a href="https://www.bonjourquebec.com/fr-ca/ou-aller/itineraires-et-routes/la-route-des-sommets"
-            class="py-4 rounded-lg my-color-light-bg hover:bg-blue-600 hover:text-white px-4 md:w-[350px] text-center md:text-xl grow"
+            class="py-4 rounded-lg bg-blue-100 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white focus:outline-none px-4 md:w-[350px] text-center md:text-xl grow"
             target="_blank">La
             route des sommets</a>
           <a href="https://www.bonjourquebec.com/fr-ca/ou-aller/itineraires-et-routes/la-route-du-richelieu"
-            class="py-4 rounded-lg my-color-light-bg hover:bg-blue-600 hover:text-white px-4 md:w-[350px] text-center md:text-xl grow"
+            class="py-4 rounded-lg bg-blue-100 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white focus:outline-none px-4 md:w-[350px] text-center md:text-xl grow"
             target="_blank">La
             route du Richelieu</a>
           <a href="https://www.bonjourquebec.com/fr-ca/ou-aller/itineraires-et-routes/les-chemins-d-eau"
-            class="py-4 rounded-lg my-color-light-bg hover:bg-blue-600 hover:text-white px-4 md:w-[350px] text-center md:text-xl grow"
+            class="py-4 rounded-lg bg-blue-100 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white focus:outline-none px-4 md:w-[350px] text-center md:text-xl grow"
             target="_blank">Les chemins d'eau</a>
           <a href="https://www.bonjourquebec.com/fr-ca/ou-aller/itineraires-et-routes/la-route-des-baleines"
-            class="py-4 rounded-lg my-color-light-bg hover:bg-blue-600 hover:text-white px-4 md:w-[350px] text-center md:text-xl grow"
+            class="py-4 rounded-lg bg-blue-100 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white focus:outline-none px-4 md:w-[350px] text-center md:text-xl grow"
             target="_blank">La
             route des baleines</a>
           <a href="https://www.bonjourquebec.com/fr-ca/ou-aller/itineraires-et-routes/la-route-des-monts-notre-dame"
-            class="py-4 rounded-lg my-color-light-bg hover:bg-blue-600 hover:text-white px-4 md:w-[350px] text-center md:text-xl grow"
+            class="py-4 rounded-lg bg-blue-100 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white focus:outline-none px-4 md:w-[350px] text-center md:text-xl grow"
             target="_blank">La
             route des Monts Notre-Dame</a>
           <a href="https://www.bonjourquebec.com/fr-ca/ou-aller/itineraires-et-routes/le-chemin-du-roy"
-            class="py-4 rounded-lg my-color-light-bg hover:bg-blue-600 hover:text-white px-4 md:w-[350px] text-center md:text-xl grow"
+            class="py-4 rounded-lg bg-blue-100 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white focus:outline-none px-4 md:w-[350px] text-center md:text-xl grow"
             target="_blank">Le
             chemin du Roy</a>
           <a href="https://www.bonjourquebec.com/fr-ca/ou-aller/itineraires-et-routes/la-route-de-la-beauce"
-            class="py-4 rounded-lg my-color-light-bg hover:bg-blue-600 hover:text-white px-4 md:w-[350px] text-center md:text-xl grow"
+            class="py-4 rounded-lg bg-blue-100 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white focus:outline-none px-4 md:w-[350px] text-center md:text-xl grow"
             target="_blank">La
             route de la Beauce</a>
           <a href="https://www.bonjourquebec.com/fr-ca/ou-aller/itineraires-et-routes/route-de-la-nouvelle-france"
-            class="py-4 rounded-lg my-color-light-bg hover:bg-blue-600 hover:text-white px-4 md:w-[350px] text-center md:text-xl grow"
+            class="py-4 rounded-lg bg-blue-100 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white focus:outline-none px-4 md:w-[350px] text-center md:text-xl grow"
             target="_blank">La
             route de la Nouvelle-France</a>
           <a href="https://www.bonjourquebec.com/fr-ca/ou-aller/itineraires-et-routes/la-route-du-fjord"
-            class="py-4 rounded-lg my-color-light-bg hover:bg-blue-600 hover:text-white px-4 md:w-[350px] text-center md:text-xl grow"
+            class="py-4 rounded-lg bg-blue-100 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white focus:outline-none px-4 md:w-[350px] text-center md:text-xl grow"
             target="_blank">La
             route du Fjord</a>
           <a href="https://www.bonjourquebec.com/fr-ca/ou-aller/itineraires-et-routes/la-route-du-fleuve"
-            class="py-4 rounded-lg my-color-light-bg hover:bg-blue-600 hover:text-white px-4 md:w-[350px] text-center md:text-xl grow"
+            class="py-4 rounded-lg bg-blue-100 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white focus:outline-none px-4 md:w-[350px] text-center md:text-xl grow"
             target="_blank">La
             route du Fleuve</a>
           <a href="https://www.bonjourquebec.com/fr-ca/ou-aller/itineraires-et-routes/la-route-des-frontieres"
-            class="py-4 rounded-lg my-color-light-bg hover:bg-blue-600 hover:text-white px-4 md:w-[350px] text-center md:text-xl grow"
+            class="py-4 rounded-lg bg-blue-100 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white focus:outline-none px-4 md:w-[350px] text-center md:text-xl grow"
             target="_blank">La
             route des Frontières</a>
           <a href="https://www.bonjourquebec.com/fr-ca/ou-aller/itineraires-et-routes/la-route-des-vins"
-            class="py-4 rounded-lg my-color-light-bg hover:bg-blue-600 hover:text-white px-4 md:w-[350px] text-center md:text-xl grow"
+            class="py-4 rounded-lg bg-blue-100 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white focus:outline-none px-4 md:w-[350px] text-center md:text-xl grow"
             target="_blank">La
             route des Vins</a>
           <a href="https://www.bonjourquebec.com/fr-ca/ou-aller/itineraires-et-routes/route-des-belles-histoires"
-            class="py-4 rounded-lg my-color-light-bg hover:bg-blue-600 hover:text-white px-4 md:w-[350px] text-center md:text-xl grow"
+            class="py-4 rounded-lg bg-blue-100 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white focus:outline-none px-4 md:w-[350px] text-center md:text-xl grow"
             target="_blank">La
             route des Belles-Histoires</a>
           <a href="https://www.bonjourquebec.com/fr-ca/ou-aller/itineraires-et-routes/la-route-des-montagnes"
-            class="py-4 rounded-lg my-color-light-bg hover:bg-blue-600 hover:text-white px-4 md:w-[350px] text-center md:text-xl grow"
+            class="py-4 rounded-lg bg-blue-100 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white focus:outline-none px-4 md:w-[350px] text-center md:text-xl grow"
             target="_blank">La
             route des Montagnes</a>
-
-
-
-
-
-
         </div>
       </section>
-
     </div>
 
     <!-- Section activité -->
@@ -394,13 +396,13 @@
         style="background-image: url(./img/bg-card/randonnee.jpg);">
         <div class="flex justify-center gap-x-2 md:justify-end -mt-10">
           <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
-            src="./img/pastilles/Saison-ete.png">
+            src="./img/pastilles/Saison-ete.png" alt="Pastille représentent l'été">
           <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
-            src="./img/pastilles/Saison-printemps.png">
+            src="./img/pastilles/Saison-printemps.png" alt="Pastille représentent le printemps">
           <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
-            src="./img/pastilles/Saison-automne.png">
+            src="./img/pastilles/Saison-automne.png" alt="Pastille représentent l'automne">
           <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
-            src="./img/pastilles/Saison-hiver.png">
+            src="./img/pastilles/Saison-hiver.png" alt="Pastille représentant l'hiver">
         </div>
         <div>
           <h2 class="text-white text-3xl font-semibold">Randonnée</h2>
@@ -415,7 +417,7 @@
         class="col-span-12 sm:col-span-10 sm:col-start-2 lg:col-span-6 lg:col-start-auto xl:col-span-4 2xl:col-span-3 py-4 px-8 shadow-lg rounded-lg mt-10">
         <div class="flex justify-center md:justify-end -mt-10">
           <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
-            src="./img/pastilles/Saison-hiver.png">
+            src="./img/pastilles/Saison-hiver.png" alt="Pastille représentant l'hiver">
         </div>
         <div>
           <h2 class="text-gray-800 text-3xl font-semibold">Raquette</h2>
@@ -426,21 +428,18 @@
         </div>
       </div>
 
-
-
-
       <!-- Escalade -->
       <div
         class="col-span-12 sm:col-span-10 sm:col-start-2 lg:col-span-6 lg:col-start-auto xl:col-span-4 2xl:col-span-3 py-4 px-8 shadow-lg rounded-lg mt-10">
         <div class="flex justify-center gap-x-2 md:justify-end -mt-10">
           <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
-            src="./img/pastilles/Saison-ete.png">
+            src="./img/pastilles/Saison-ete.png" alt="Pastille représentent l'été">
           <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
-            src="./img/pastilles/Saison-printemps.png">
+            src="./img/pastilles/Saison-printemps.png" alt="Pastille représentent le printemps">
           <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
-            src="./img/pastilles/Saison-automne.png">
+            src="./img/pastilles/Saison-automne.png" alt="Pastille représentent l'automne">
           <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
-            src="./img/pastilles/Saison-hiver.png">
+            src="./img/pastilles/Saison-hiver.png" alt="Pastille représentant l'hiver">
         </div>
         <div>
           <h2 class="text-gray-800 text-3xl font-semibold">Escalade</h2>
@@ -454,7 +453,7 @@
         class="col-span-12 sm:col-span-10 sm:col-start-2 lg:col-span-6 lg:col-start-auto xl:col-span-4 2xl:col-span-3 py-4 px-8 shadow-lg rounded-lg mt-10">
         <div class="flex justify-center md:justify-end -mt-10">
           <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
-            src="./img/pastilles/Saison-ete.png">
+            src="./img/pastilles/Saison-ete.png" alt="Pastille représentent l'été">
         </div>
         <div>
           <h2 class="text-gray-800 text-3xl font-semibold">Natation</h2>
@@ -470,13 +469,13 @@
         class="col-span-12 sm:col-span-10 sm:col-start-2 lg:col-span-6 lg:col-start-auto xl:col-span-4 2xl:col-span-3 py-4 px-8 shadow-lg rounded-lg mt-10">
         <div class="flex justify-center gap-x-2 md:justify-end -mt-10">
           <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
-            src="./img/pastilles/Saison-ete.png">
+            src="./img/pastilles/Saison-ete.png" alt="Pastille représentent l'été">
           <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
-            src="./img/pastilles/Saison-printemps.png">
+            src="./img/pastilles/Saison-printemps.png" alt="Pastille représentent le printemps">
           <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
-            src="./img/pastilles/Saison-automne.png">
+            src="./img/pastilles/Saison-automne.png" alt="Pastille représentent l'automne">
           <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
-            src="./img/pastilles/Saison-hiver.png">
+            src="./img/pastilles/Saison-hiver.png" alt="Pastille représentant l'hiver">
         </div>
         <div>
           <h2 class="text-gray-800 text-3xl font-semibold">Chasse aux produits locaux</h2>
@@ -491,13 +490,13 @@
         style="background-image: url(./img/bg-card/debout.jpg);">
         <div class="flex justify-center gap-x-2 md:justify-end -mt-10">
           <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
-            src="./img/pastilles/Saison-ete.png">
+            src="./img/pastilles/Saison-ete.png" alt="Pastille représentent l'été">
           <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
-            src="./img/pastilles/Saison-printemps.png">
+            src="./img/pastilles/Saison-printemps.png" alt="Pastille représentent le printemps">
           <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
-            src="./img/pastilles/Saison-automne.png">
+            src="./img/pastilles/Saison-automne.png" alt="Pastille représentent l'automne">
           <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
-            src="./img/pastilles/Saison-hiver.png">
+            src="./img/pastilles/Saison-hiver.png" alt="Pastille représentant l'hiver">
         </div>
         <div>
           <h2 class="text-white text-3xl font-semibold">Photographie</h2>
@@ -512,11 +511,11 @@
         class="col-span-12 sm:col-span-10 sm:col-start-2 lg:col-span-6 lg:col-start-auto xl:col-span-4 2xl:col-span-3 py-4 px-8 shadow-lg rounded-lg mt-10">
         <div class="flex justify-center gap-x-2 md:justify-end -mt-10">
           <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
-            src="./img/pastilles/Saison-ete.png">
+            src="./img/pastilles/Saison-ete.png" alt="Pastille représentent l'été">
           <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
-            src="./img/pastilles/Saison-printemps.png">
+            src="./img/pastilles/Saison-printemps.png" alt="Pastille représentent le printemps">
           <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
-            src="./img/pastilles/Saison-automne.png">
+            src="./img/pastilles/Saison-automne.png" alt="Pastille représentent l'automne">
         </div>
         <div>
           <h2 class="text-gray-800 text-3xl font-semibold">Équitation</h2>
@@ -531,7 +530,7 @@
         style="background-image: url(./img/bg-card/paddle-board.jpg);">
         <div class="flex justify-center md:justify-end -mt-10">
           <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
-            src="./img/pastilles/Saison-ete.png">
+            src="./img/pastilles/Saison-ete.png" alt="Pastille représentent l'été">
         </div>
         <div>
           <h2 class="text-white text-3xl font-semibold">Planches à pagaie</h2>
@@ -547,11 +546,11 @@
         class="col-span-12 sm:col-span-10 sm:col-start-2 lg:col-span-6 lg:col-start-auto xl:col-span-4 2xl:col-span-3 py-4 px-8 shadow-lg rounded-lg mt-10">
         <div class="flex justify-center gap-x-2 md:justify-end -mt-10">
           <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
-            src="./img/pastilles/Saison-ete.png">
+            src="./img/pastilles/Saison-ete.png" alt="Pastille représentent l'été">
           <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
-            src="./img/pastilles/Saison-printemps.png">
+            src="./img/pastilles/Saison-printemps.png" alt="Pastille représentent le printemps">
           <img class="w-12 h-12 object-cover rounded-full border-2 border-indigo-500"
-            src="./img/pastilles/Saison-automne.png">
+            src="./img/pastilles/Saison-automne.png" alt="Pastille représentent l'automne">
         </div>
         <div>
           <h2 class="text-gray-800 text-3xl font-semibold">Vélo</h2>
@@ -568,30 +567,24 @@
       <p>Trouver l'inspiration pour découvrir le Québec</p>
       <form id="form" name="form" class="mt-6" action="confirmation.html" onsubmit="return validateFormInfoletter()"
         novalidate>
-
         <div class="flex flex-col md:flex-row relative z-0">
           <div class="w-full md:pr-6">
             <input type="text" name="mail-infoletter" id="mail-infoletter"
               class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-xl text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
-              placeholder="Votre courriel" />
-
+              placeholder="Votre courriel">
             <div class="error-message text-red-600"></div>
           </div>
-
           <div class="flex justify-center md:justify-end">
-            <input type="submit" class="mb-5 rounded-full bg-blue-600 hover:bg-blue-800 px-12 py-4 text-white"
-              value="Soumettre" />
+            <input type="submit"
+              class="mb-0 md:mb-5 mt-5 md:mt-0 rounded-full bg-blue-600 hover:bg-blue-800 px-12 py-4 text-white"
+              value="Soumettre">
           </div>
         </div>
-
       </form>
     </section>
 
-
-
-
-
   </main>
+
   <footer class="container grid grid-cols-12 mx-auto">
     <div class="col-span-12 bg-white dark:bg-gray-900">
       <hr class="my-6 border-gray-100 dark:border-gray-700 lg:my-8 shadow-sm">

@@ -12,13 +12,6 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
-.saison-topic {
-  background-color: rgb(218, 230, 240);
-}
-.saison-topic__text {
-  font-family: "Lora", serif;
-}
-
 .title-accent {
   font-family: "Lora", serif;
 }
@@ -40,4 +33,4 @@ header .header__link--active {
 header .header__logo {
   font-family: "Comforter", cursive;
   color: rgb(20, 114, 191);
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
