@@ -1,9 +1,9 @@
 // console.log("fichier service-worker");
 
 //Update cache names any time any of the cached files change.
-const CACHE_NAME = "static-cache-v2";
+const CACHE_NAME = "static-cache-v3";
 //Add list of files to cache here.
-const FILES_TO_CACHE = ["offline.html"];
+const FILES_TO_CACHE = ["index.html", "ou-aller.html", "quoi-faire.html"];
 
 self.addEventListener("install", (evt) => {
   // console.log("[ServiceWorker] Install");
