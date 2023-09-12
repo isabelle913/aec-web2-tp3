@@ -57,11 +57,13 @@
     </section>
 
     <!-- Section Région -->
-    <section class='container grid grid-cols-12 mx-auto' id="rive-sud">
-      <div class="col-span-12">
+    <section class='container grid grid-cols-12 mx-auto'>
+
+      <!-- Rive-Sud -->
+      <div class="col-span-12 mb-6" id="rive-sud">
         <h2 class="title-accent text-center text-5xl my-8">Rive-sud du fleuve</h2>
         <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
-          <ul class="flex flex-col md:flex-row  -mb-px text-xl font-medium text-center" id="myTab"
+          <ul class="flex flex-col md:flex-row  -mb-px text-xl font-medium text-center" id="myTabRiveSud"
             data-tabs-toggle="#myTabContent" role="tablist">
             <li class="mr-2 " role="presentation">
               <button class="inline-block p-4 border-b-2 rounded-t-lg" id="monteregie-tab"
@@ -89,7 +91,8 @@
           </ul>
         </div>
 
-        <div id="myTabContent">
+        <div id="myTabContentRiveSud">
+          <!-- Montérégie -->
           <div class="hidden p-4 rounded-lg my-color-light-bg dark:bg-gray-800" id="monteregie" role="tabpanel"
             aria-labelledby="monteregie-tab">
             <div class="grid grid-cols-12 mx-auto p-6 gap-x-4">
@@ -304,6 +307,310 @@
         </div>
 
       </div>
+
+      <!-- Rive-Nord -->
+      <div class="col-span-12 mb-6" id="rive-nord">
+        <h2 class="title-accent text-center text-5xl my-8">Rive-nord du fleuve</h2>
+        <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+          <ul class="flex flex-col md:flex-row  -mb-px text-xl font-medium text-center" id="myTabRiveNord"
+            data-tabs-toggle="#myTabContent" role="tablist">
+            <li class="mr-2 " role="presentation">
+              <button class="inline-block p-4 border-b-2 rounded-t-lg" id="outaouais-tab" data-tabs-target="#outaouais"
+                type="button" role="tab" aria-controls="outaouais" aria-selected="false">Outaouais</button>
+            </li>
+            <li class="mr-2 " role="presentation">
+              <button
+                class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                id="laurentides-tab" data-tabs-target="#laurentides" type="button" role="tab"
+                aria-controls="laurentides" aria-selected="false">Laurentides</button>
+            </li>
+            <li class="mr-2 " role="presentation">
+              <button
+                class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                id="lanaudiere-tab" data-tabs-target="#lanaudiere" type="button" role="tab" aria-controls="lanaudiere"
+                aria-selected="false">Lanaudière</button>
+            </li>
+            <li class=" " role="presentation">
+              <button
+                class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                id="capital-national-tab" data-tabs-target="#capital-national" type="button" role="tab"
+                aria-controls="capital-national" aria-selected="false">Capital-National</button>
+            </li>
+            <li class=" " role="presentation">
+              <button
+                class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                id="saguenay-tab" data-tabs-target="#saguenay" type="button" role="tab" aria-controls="saguenay"
+                aria-selected="false">Saguenay</button>
+            </li>
+          </ul>
+        </div>
+
+        <div id="myTabContentRiveNord">
+          <!-- outaouais -->
+          <div class="hidden p-4 rounded-lg my-color-light-bg dark:bg-gray-800" id="outaouais" role="tabpanel"
+            aria-labelledby="outaouais-tab">
+            <div class="grid grid-cols-12 mx-auto p-6 gap-x-4">
+
+              <!-- Carte Rivière la guerre-->
+              <div
+                class="col-span-12 2xl:col-span-6 mx-auto  py-4 px-8 bg-white shadow-lg rounded-lg mt-20 ou-aller--bg sm:bg-none">
+                <div class="flex justify-center md:justify-end -mt-16">
+                  <img class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
+                    src="./img/pastilles/photographie.png" alt="Pastille représentent la photographie">
+                </div>
+                <div class="flex flex-col  md:flex-row">
+                  <div class="md:block md:w-1/3 md:pr-4 self-center pb-4 md:pb-0">
+                    <img class="rounded-lg self-center" src="./img/ou-aller/riviere-la-guerre.jpg"
+                      alt="Une église en ruine">
+                  </div>
+                  <div class="md:w-2/3">
+                    <p class="text-gray-800 text-3xl font-semibold">Rivière-La Guerre</p>
+                    <p class="mt-2 text-gray-600">Photographie</p>
+                    <p class="mt-2 text-gray-600">Rivière-La Guerre, parfois simplement LaGuerre, était un village de la
+                      municipalité régionale de comté Haut-Saint-Laurent, en Montérégie, au Québec dans l'Est du Canada
+                    </p>
+                    <p class="mt-2 text-gray-600">1498 Chem. de la Rivière-La Guerre, Saint-Anicet, QC J0S 1M0</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Carte La Galerie Coccinelle-->
+              <div
+                class="col-span-12 lg:col-span-6 mx-auto  py-4 px-8 bg-white shadow-lg rounded-lg mt-20 ou-aller--bg sm:bg-none w-full">
+                <div class="flex justify-end -mt-16">
+                  <img class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
+                    src="./img/pastilles/alimentation-pastille.png" alt="Pastille représentent un panier d'achat">
+                </div>
+                <div class="flex flex-col  md:flex-row">
+                  <div>
+                    <p class="text-gray-800 text-3xl font-semibold">La Galerie Coccinelle</p>
+                    <p class="mt-2 text-gray-600">Belle boutique</p>
+                    <p class="mt-2 text-gray-600">Recommandé par Mélanie, a voir!
+                    </p>
+                    <p class="mt-2 text-gray-600">3200 Bd Laframboise, Saint-Hyacinthe, QC J2S 4Z5</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Laurentides -->
+          <div class="hidden p-4 rounded-lg my-color-light-bg dark:bg-gray-800" id="laurentides" role="tabpanel"
+            aria-labelledby="laurentides-tab">
+            <div class="grid grid-cols-12 mx-auto p-6 gap-x-4">
+
+              <!-- Ajouter card d'endroits ici-->
+              <div>Laurentides</div>
+
+
+            </div>
+          </div>
+
+          <!-- Lanaudiere -->
+          <div class="hidden p-4 rounded-lg my-color-light-bg dark:bg-gray-800" id="lanaudiere" role="tabpanel"
+            aria-labelledby="lanaudiere-tab">
+            <div class="grid grid-cols-12 mx-auto p-6 gap-x-4">
+
+              <!-- Ajouter card-->
+              <div>lanaudiere</div>
+
+            </div>
+          </div>
+
+          <!-- Capital-National -->
+          <div class="hidden p-4 rounded-lg my-color-light-bg dark:bg-gray-800" id="capital-national" role="tabpanel"
+            aria-labelledby="capital-national-tab">
+            <div class="grid grid-cols-12 mx-auto p-6 gap-x-4">
+
+              <!-- Ajouter card ici-->
+              <div>capital-national</div>
+
+
+            </div>
+          </div>
+
+          <!-- Saguenay -->
+          <div class="hidden p-4 rounded-lg my-color-light-bg dark:bg-gray-800" id="saguenay" role="tabpanel"
+            aria-labelledby="saguenay-tab">
+            <div class="grid grid-cols-12 mx-auto p-6 gap-x-4">
+
+              <!-- Ajouter card ici-->
+              <div>Saguenay</div>
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Gaspésie - Côte-Nord - Baie-James -->
+      <div class="col-span-12 mb-6" id="far-away">
+        <h2 class="title-accent text-center text-5xl my-8">Gaspésie- Côte-Nord - Abitibi-Téminscamingue - Nord du Québec
+        </h2>
+        <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+          <ul class="flex flex-col md:flex-row  -mb-px text-xl font-medium text-center" id="myTabFarAway"
+            data-tabs-toggle="#myTabContent" role="tablist">
+            <li class="mr-2 " role="presentation">
+              <button class="inline-block p-4 border-b-2 rounded-t-lg" id="gaspesie-tab" data-tabs-target="#gaspesie"
+                type="button" role="tab" aria-controls="gaspesie" aria-selected="false">Gaspésie</button>
+            </li>
+            <li class="mr-2 " role="presentation">
+              <button
+                class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                id="cote-nord-tab" data-tabs-target="#cote-nord" type="button" role="tab" aria-controls="laurentides"
+                aria-selected="false">Côte-Nord</button>
+            </li>
+            <li class="mr-2 " role="presentation">
+              <button
+                class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                id="abitibi-tab" data-tabs-target="#abitibi" type="button" role="tab" aria-controls="abitibi"
+                aria-selected="false">Abitibi-Téminscamingue</button>
+            </li>
+            <li class=" " role="presentation">
+              <button
+                class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                id="nord-quebec-tab" data-tabs-target="#nord-quebec" type="button" role="tab"
+                aria-controls="nord-quebec" aria-selected="false">Nord du Québec</button>
+            </li>
+
+          </ul>
+        </div>
+
+        <div id="myTabContentFarAway">
+          <!-- Gaspésie -->
+          <div class="hidden p-4 rounded-lg my-color-light-bg dark:bg-gray-800" id="gaspesie" role="tabpanel"
+            aria-labelledby="gaspesie-tab">
+            <div class="grid grid-cols-12 mx-auto p-6 gap-x-4">
+
+              <!-- Ajouter card ici-->
+              <div>Gaspésie</div>
+
+
+            </div>
+          </div>
+
+          <!-- Côte-Nord -->
+          <div class="hidden p-4 rounded-lg my-color-light-bg dark:bg-gray-800" id="cote-nord" role="tabpanel"
+            aria-labelledby="cote-nord-tab">
+            <div class="grid grid-cols-12 mx-auto p-6 gap-x-4">
+
+              <!-- Ajouter card d'endroits ici-->
+              <div>Côte-Nord</div>
+
+
+            </div>
+          </div>
+
+          <!-- Abitibi-Téminscamingue -->
+          <div class="hidden p-4 rounded-lg my-color-light-bg dark:bg-gray-800" id="abitibi" role="tabpanel"
+            aria-labelledby="abitibi-tab">
+            <div class="grid grid-cols-12 mx-auto p-6 gap-x-4">
+
+              <!-- Ajouter card-->
+              <div>Abitibi-Téminscamingue</div>
+
+            </div>
+          </div>
+
+          <!-- Nord du Québec -->
+          <div class="hidden p-4 rounded-lg my-color-light-bg dark:bg-gray-800" id="nord-quebec" role="tabpanel"
+            aria-labelledby="nord-quebec-tab">
+            <div class="grid grid-cols-12 mx-auto p-6 gap-x-4">
+
+              <!-- Ajouter card ici-->
+              <div>Nord du Québec</div>
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Iles-de-la-madeleine -->
+      <div class="col-span-12 mb-6" id="madeleine">
+        <h2 class="title-accent text-center text-5xl my-8">Iles-de-la-Madeleine</h2>
+        <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+          <ul class="flex flex-col md:flex-row  -mb-px text-xl font-medium text-center" id="myTabMadeleine"
+            data-tabs-toggle="#myTabContent" role="tablist">
+            <li class="mr-2 " role="presentation">
+              <button
+                class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                id="havre-aubert-tab" data-tabs-target="#havre-aubert" type="button" role="tab"
+                aria-controls="havre-aubert" aria-selected="false">Ile du Havre-Aubert</button>
+            </li>
+            <li class="mr-2 " role="presentation">
+              <button
+                class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                id="cap-meules-tab" data-tabs-target="#cap-meules" type="button" role="tab" aria-controls="cap-meules"
+                aria-selected="false">Ile du Cap aux Meules</button>
+            </li>
+            <li class=" " role="presentation">
+              <button
+                class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                id="havre-maisons-tab" data-tabs-target="#havre-maisons" type="button" role="tab"
+                aria-controls="havre-maisons" aria-selected="false">Ile du Havre aux Maisons</button>
+            </li>
+            <li class=" " role="presentation">
+              <button
+                class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                id="grande-entree-tab" data-tabs-target="#grande-entree" type="button" role="tab"
+                aria-controls="grande-entree" aria-selected="false">Ile de la Grande Entrée</button>
+            </li>
+          </ul>
+        </div>
+
+        <div id="myTabContentMadeleine">
+          <!-- Ile du havre-aubert -->
+          <div class="hidden p-4 rounded-lg my-color-light-bg dark:bg-gray-800" id="havre-aubert" role="tabpanel"
+            aria-labelledby="havre-aubert-tab">
+            <div class="grid grid-cols-12 mx-auto p-6 gap-x-4">
+
+              <!-- Ajouter card ici-->
+              <div>Ile havre-aubert</div>
+
+            </div>
+          </div>
+
+          <!-- Ile du Cap aux Meules -->
+          <div class="hidden p-4 rounded-lg my-color-light-bg dark:bg-gray-800" id="cap-meules" role="tabpanel"
+            aria-labelledby="cap-meules-tab">
+            <div class="grid grid-cols-12 mx-auto p-6 gap-x-4">
+
+              <!-- Ajouter card d'endroits ici-->
+              <div>Ile du Cap aux Meules</div>
+
+
+            </div>
+          </div>
+
+          <!-- Ile du Havre aux Maisons -->
+          <div class="hidden p-4 rounded-lg my-color-light-bg dark:bg-gray-800" id="havre-maisons" role="tabpanel"
+            aria-labelledby="havre-maisons-tab">
+            <div class="grid grid-cols-12 mx-auto p-6 gap-x-4">
+
+              <!-- Ajouter card-->
+              <div>Ile du Havre aux Maisons</div>
+
+            </div>
+          </div>
+
+          <!-- Ile de la Grande Entrée -->
+          <div class="hidden p-4 rounded-lg my-color-light-bg dark:bg-gray-800" id="grande-entree" role="tabpanel"
+            aria-labelledby="grande-entree-tab">
+            <div class="grid grid-cols-12 mx-auto p-6 gap-x-4">
+
+              <!-- Ajouter card ici-->
+              <div>Ile de la Grande Entrée</div>
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </section>
 
     <!-- Section formulaire -->
@@ -427,6 +734,7 @@
       </div>
     </section>
 
+    <!-- Section bouton PWA -->
     <section class='container grid grid-cols-12 mx-auto mt-8 p-6'>
       <h2 class="hidden">Bouton pour installer ce site</h2>
       <button
