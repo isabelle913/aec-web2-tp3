@@ -6,19 +6,11 @@
   <meta name="Visiter le Québec"
     content="Je vous recommande mes endroits préférés pour trouvez des produits locaux, faire des activités ainsi que mes 'spots' photo">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- TODO Erreur validation -->
-  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-  <meta name="theme-color" content="#1472BF">
   <title>Visiter le Québec</title>
   <link rel="stylesheet" href="./style/css/normalize.css">
   <link rel="stylesheet" href="./style/css/style.css">
   <link rel="manifest" href="manifest.json">
   <link rel="icon" href="favicon.png">
-  <!-- Add iOS meta tags and icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#1472BF">
-  <meta name="apple-mobile-web-app-title" content="VisitQc PWA">
-  <link rel="apple-touch-icon" href="./img/icons-manifest/logo192.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="./script/script.js" defer></script>
   <script src="./script/install.js" defer></script>
@@ -436,11 +428,10 @@
     </section>
 
     <section class='container grid grid-cols-12 mx-auto mt-8 p-6'>
-
+      <h2 class="hidden">Bouton pour installer ce site</h2>
       <button
         class="nav-link col-span-8 col-start-3 mt-5 rounded-full bg-blue-600 hover:bg-blue-800 focus:bg-blue-800 px-12 py-4 text-white"
         id="installBtn" aria-label="installBtn" hidden>Installer Visiter le Québec</button>
-
     </section>
 
   </main>
