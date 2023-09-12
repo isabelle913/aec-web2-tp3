@@ -1,16 +1,13 @@
 let deferredInstallPrompt = null;
 const installBtn = document.getElementById("installBtn");
 
-console.log("Bonjour 5");
+// console.log("Bonjour 5");
 
 installBtn.addEventListener("click", installPWA);
 window.addEventListener("beforeinstallprompt", saveBeforeInstallPromptEvent);
 window.addEventListener("appinstalled", logAppInstalled);
 
 function installPWA(event) {
-  console.log(event);
-  console.log("Miip");
-
   deferredInstallPrompt.prompt();
   event.srcElement.setAttribute("hidden", true);
 
